@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Network Layer 2
+# What is XLN?
 
 ## XLN is a layer 2 network
 
