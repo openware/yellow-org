@@ -10,7 +10,7 @@ Frontend - is a boilerplate client with a set of libraries that can be used for 
 
 The client provides the next major functionalities:
 - Authorization
-- Desposit and Withdrawal functionality 
+- Deposit and Withdrawal functionality 
 - Chart
 - Order Book
 - Trading functionality
