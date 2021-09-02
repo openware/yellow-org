@@ -27,21 +27,21 @@ We are aiming to build a solution for new-generation trading applications based 
 This solution will have user-friendly yellow.com and developer-friendly yellow.org front-end. Under the hood, it will have XLN for trading, and custody.org for decentralized KYC authentication and assets custody.
 
 <Mermaid chart='
-    classDiagram
-        Front_end <|-- XLN
-        Front_end <|-- custody_org
-        Front_end : yellow.com
-        Front_end : user-friendly
-        Front_end: yellow.org()
-        Front_end: developer-friendly()
-        class XLN{
-        price feed
-        matching engine()
-        }
-        class custody_org{
-        KYC authentication partners
-        assets custody partners()
-        }' />
+classDiagram
+Front_end <|-- XLN
+Front_end <|-- custody_org
+Front_end : yellow.com
+Front_end : user-friendly
+Front_end: yellow.org()
+Front_end: developer-friendly()
+class XLN{
+price feed
+matching engine()
+}
+class custody_org{
+KYC authentication partners
+assets custody partners()
+}' />
 
 ### Deployment
 
