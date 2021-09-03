@@ -2,6 +2,8 @@
 sidebar_position: 5
 ---
 
+import Mermaid from '@theme/Mermaid';
+
 # Smart Contracts
 
 **State channels**
@@ -15,7 +17,68 @@ State channel has the next lifecycle:
 - operating (off-chain) - send transactions
 - closing (on-chain) - writing the final state to the blockchain.
 
-![State channels](/img/components/statechannels.svg)
+<Mermaid chart='
+sequenceDiagram
+rect rgb(255, 255, 204)
+Note over WalletA: Opening a channel
+FinexA->>WalletA: createChannel()
+WalletA-->>FinexA: 0xabc: opening
+WalletA-->>FinexA: outbox: [mesg0]
+FinexA->>FinexB: mgs0
+FinexB->>WalletB: pushMesage(mgs0)
+WalletB-->>FinexB: 0xabc: proposed
+FinexB->WalletB: joinChannel(0xabc)
+WalletB-->>FinexB: 0xabc: opening
+WalletB-->>FinexB: outbox: [mesg1]
+FinexB->>FinexA: mgs1
+FinexA->>WalletA: pushMesage(mgs1)
+WalletA-->>FinexA: 0xabc: funding
+WalletA->>Chain: deposit()
+Chain-->>WalletA: Deposited
+Chain-->>WalletB: Deposited
+WalletB->>Chain: deposit()
+Chain-->>WalletA: Deposited
+Chain-->>WalletB: Deposited
+WalletA-->>FinexA: outbox: [mesg2]
+FinexA->>FinexB: mgs2
+FinexB->>WalletB: pushMesage(mgs2)
+WalletB-->>FinexB: 0xabc: running
+WalletB-->>FinexB: MessageQueued(msg3)
+FinexB->>FinexA: mgs3
+FinexA->>WalletA: pushMesage(mgs3)
+WalletA-->>FinexA: 0xabc: running
+end
+loop [i=0...m]
+Note over WalletA: Running a channel
+FinexA->>WalletA: updateChannel(state-4+2i)
+WalletA-->>FinexA: 0xabc: (state-4+2i)
+WalletA-->>FinexA: outbox: [msg-4+2i]
+FinexA->>FinexB: mgs-4+2i
+FinexB->>WalletB: pushMesage(msg-4+2i)
+WalletB-->>FinexB: 0xabc: (state-4+2i)
+FinexB->>WalletB: joinChannel(state-5+2i)
+WalletB-->>FinexB: 0xabc: (state-5+2i)
+WalletB-->>FinexB: outbox: [mesg-5+2i]
+FinexB->>FinexA: mesg-5+2i
+FinexA->>WalletA: pushMessage(mgs-5+2i)
+WalletA-->>FinexA: 0xabc: (state-5+2i)
+end
+rect rgb(255, 255, 204)
+Note over WalletA: Closing a channel
+FinexA->>WalletA: closeChannel()
+WalletA-->>FinexA: 0xabc: closing
+WalletA-->>FinexA: outbox: [isFinalA]
+FinexA->>FinexB: isFinalA
+FinexB->>WalletB: pushMesage(isFinal)
+WalletB-->>FinexB: 0xabc: closed
+WalletB-->>FinexB: outbox: [isFinalB]
+FinexB->>FinexA: isFinalB
+FinexA->>WalletA: pushMessage(isFinalB)
+WalletA-->>FinexA: 0xabc: closed
+WalletA->>Chain: concludePushOutcomeAndTransferAll()
+Chain-->>WalletA: AllocationUpdated
+Chain-->>WalletB: AllocationUpdated
+end' />
 
 **Staking**
 
