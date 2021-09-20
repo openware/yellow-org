@@ -1,0 +1,23 @@
+.heroBanner {
+	padding: 4rem 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.heroText {
+	text-align: left;
+	color: var(--text-color-100);
+}
+
+@media screen and (max-width: 966px) {
+	.heroBanner {
+	  padding: 2rem;
+	}
+}
+  
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}

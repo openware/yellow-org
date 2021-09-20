@@ -1,0 +1,23 @@
+.button {
+	border-radius: 2px;
+}
+  
+.button.button--secondary {
+	color: var(--primary-cta-layer-color);
+	box-shadow: -4px 4px 0px var(--secondary-control-layer-color-40);
+}
+
+.button--secondary:hover {
+	box-shadow: -2px 2px 0px var(--secondary-control-layer-color-40);
+}
+
+.button--secondary:not(.button--outline):hover {
+	box-shadow: -2px 2px 0px var(--secondary-control-layer-color-40);
+	background-color: var(--ifm-color-secondary);
+	border-color: var(--ifm-color-secondary);
+}
+
+.button--outline:hover {
+	--ifm-button-background-color: transparent;
+	color: var(--ifm-font-color-base);
+}

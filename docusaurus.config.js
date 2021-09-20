@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Yellow.org',
-  tagline: 'Yellow Blockchain Accelerator',
+  tagline: 'State channels scale peer-to-peer blockchain interactions.',
   url: 'https://www.yellow.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -14,7 +14,6 @@ module.exports = {
   projectName: 'yellow', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Yellow',
       logo: {
         alt: 'Yellow Chain',
         src: 'img/logo.svg',
