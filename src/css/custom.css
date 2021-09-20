@@ -5,16 +5,37 @@
  * work well for content-centric websites.
  */
 
+@import "../theme/components/styles.css";
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #ffe014;
+  --primary-cta-layer-color: #FFFFFF;
+  --secondary-control-color-60: #FCD000;
+  --secondary-control-layer-color-40: #A79442;
+  --secondary-control-layer-color-90: #000000;
+  --layout-width: 1272px;
+  --text-color-100: #090909;
+
+  --ifm-color-primary: #FCD000;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-secondary: var(--text-color-100);
+  --ifm-font-color-base: var(--text-color-100);
+
   --ifm-code-font-size: 95%;
+  --ifm-font-weight-semibold: 600;
+  /* --font-family-link: 'Metro Sans'; */
+  /* --ifm-font-family-base: 'Gilmer'; */
+
+  --ifm-navbar-background-color: var(--ifm-color-primary);
+  --ifm-navbar-link-color: #272727;
+  --ifm-navbar-link-hover-color: #272727;
+  --ifm-navbar-item-padding-horizontal: 0px;
+  --ifm-container-width-xl: calc(var(--layout-width) + (var(--ifm-spacing-horizontal) * 2));
 }
 
 .docusaurus-highlight-code-line {
