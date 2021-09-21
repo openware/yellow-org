@@ -16,8 +16,11 @@
   --secondary-control-layer-color-90: #000000;
   --text-color-100: #090909;
   --text-color-00: #FFFFFF;
+  --system-blue-60: #2563EB;
 
   --ifm-color-primary: #FCD000;
+  --ifm-link-color: var(--system-blue-60);
+  --ifm-link-hover-decoration: none;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -46,4 +49,11 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+a {
+  b:hover {
+    border-bottom: 2px solid var(--ifm-color-primary);
+    padding-bottom: 2px;
+  }
 }
