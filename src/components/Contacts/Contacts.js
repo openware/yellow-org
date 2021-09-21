@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
-import Mail from '../../../static/img/icons/Mail.js';
-import Phone from '../../../static/img/icons/Phone.js';
+import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Contacts() {
-    const [fullName, setFullName] = useState('');
-    const [email, setEmail] = useState('');
-
     return (
         <div className="container contacts">
             <div className="row">
@@ -25,23 +21,15 @@ export default function Contacts() {
                         <p className="contacts__item--subtitle h8">Contact</p>
                         <a href="tel:+1 (650) 502-5022">
                             <div className="contacts__item--subtitle subtitle-2-18-400">
-                                <Phone/> +1 (650) 502-5022
+                                <img src={useBaseUrl('/img/icons/phone.svg')}/> +1 (650) 502-5022
                             </div>
                         </a>
                         <a href="mailto:contact@yellow.com">
                             <div className="contacts__item--subtitle subtitle-2-18-400">
-                                <Mail/> contact@yellow.com
+                                <img src={useBaseUrl('/img/icons/mail.svg')}/> contact@yellow.com
                             </div>
                         </a>
                     </div>
-                </div>
-                <div className="col col--6">
-                    <h5 className="contacts--title">Contact us</h5>
-                    <p className="contacts__item--text subtitle-2-18-400">
-                        Please, enter your name and email and we will contact you soon.
-                    </p>
-                    <input className="input" onChange={setFullName} value={fullName}/>
-                    <input className="input" onChange={setEmail} value={email}/>
                 </div>
             </div>
         </div>
