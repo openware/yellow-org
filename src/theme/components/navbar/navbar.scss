@@ -13,7 +13,8 @@
 .navbar__link {
 	letter-spacing: 0.15px;
 	margin: 0px 18px;
-	/* font-family: var(--font-family-link); */
+	font-family: var(--font-family-link);
+	@extend .subtitle-2-18-600;
 }
 
 .navbar__link:hover {

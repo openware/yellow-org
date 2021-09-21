@@ -1,0 +1,10 @@
+.footer {
+  &__title {
+    @extend .subtitle-2-18-700;
+  }
+
+  &__link-item {
+    color: var(--text-color-00);
+    @extend .body-1-16-400;
+  }
+}

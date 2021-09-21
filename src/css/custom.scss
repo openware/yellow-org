@@ -5,7 +5,8 @@
  * work well for content-centric websites.
  */
 
-@import "../theme/components/styles.css";
+@import "../theme/components/styles.scss";
+@import "./typography.scss";
 
 /* You can override the default Infima variables here. */
 :root {
@@ -13,8 +14,8 @@
   --secondary-control-color-60: #FCD000;
   --secondary-control-layer-color-40: #A79442;
   --secondary-control-layer-color-90: #000000;
-  --layout-width: 1272px;
   --text-color-100: #090909;
+  --text-color-00: #FFFFFF;
 
   --ifm-color-primary: #FCD000;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -26,15 +27,13 @@
   --ifm-color-secondary: var(--text-color-100);
   --ifm-font-color-base: var(--text-color-100);
 
-  --ifm-code-font-size: 95%;
-  --ifm-font-weight-semibold: 600;
-  /* --font-family-link: 'Metro Sans'; */
-  /* --ifm-font-family-base: 'Gilmer'; */
-
   --ifm-navbar-background-color: var(--ifm-color-primary);
   --ifm-navbar-link-color: #272727;
   --ifm-navbar-link-hover-color: #272727;
   --ifm-navbar-item-padding-horizontal: 0px;
+  --ifm-footer-link-color: var(--text-color-00);
+  
+  --layout-width: 1272px;
   --ifm-container-width-xl: calc(var(--layout-width) + (var(--ifm-spacing-horizontal) * 2));
 }
 

@@ -12,7 +12,7 @@ export default function Hero() {
 			<div className="container">
 				<div className="row">
 					<div className="col col--7">
-						<h4 className={clsx('hero__title', styles.heroText)}>{siteConfig.tagline}</h4>
+						<h4 className={styles.heroText}>{siteConfig.tagline}</h4>
 						<div className={styles.buttons}>
 							<Link
 								className="button button--secondary margin-right--md"
