@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HomepageFeatures from '../components/HomepageFeatures';
 import Hero from '../components/Hero/Hero';
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <Hero />
       <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
