@@ -1,0 +1,19 @@
+.contacts {
+  padding: 112px 0;
+
+  &--title {
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    &--subtitle {
+      margin-bottom: 12px;
+    }
+  }
+
+  a {
+    color: var(--text-color-90);
+  }
+}

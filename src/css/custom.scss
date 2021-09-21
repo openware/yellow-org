@@ -7,6 +7,7 @@
 
 @import "../theme/components/styles.scss";
 @import "./typography.scss";
+@import "../components/styles.scss";
 
 /* You can override the default Infima variables here. */
 :root {
@@ -14,8 +15,9 @@
   --secondary-control-color-60: #FCD000;
   --secondary-control-layer-color-40: #A79442;
   --secondary-control-layer-color-90: #000000;
-  --text-color-100: #090909;
   --text-color-00: #FFFFFF;
+  --text-color-90: #272727;
+  --text-color-100: #090909;
   --system-blue-60: #2563EB;
 
   --ifm-color-primary: #FCD000;
