@@ -1,0 +1,27 @@
+.contacts {
+  padding-top: 112px;
+  padding-bottom: 112px;
+
+  &--title {
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    &--subtitle {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      img {
+        margin-right: 9px;
+      }
+    }
+  }
+
+  a {
+    color: var(--text-color-90);
+  }
+}

@@ -5,17 +5,19 @@
 @import '../../static/fonts/metro-sans-semi-bold/webfonts/metro-sans-semi-bold.css';
 
 :root {
-  --ifm-h1-font-size: 8rem;
-  --ifm-h2-font-size: 6rem;
-  --ifm-h3-font-size: 4.5rem;
-  --ifm-h4-font-size: 3.75rem;
-  --ifm-h5-font-size: 3rem;
-  --ifm-h6-font-size: 2.25rem;
+  --h1-font-size: 8rem;
+  --h2-font-size: 6rem;
+  --h3-font-size: 4.5rem;
+  --h4-font-size: 3.75rem;
+  --h5-font-size: 3rem;
+  --h6-font-size: 2.25rem;
+  --h7-font-size: 1.875rem;
+  --h8-font-size: 1.5rem;
 
   --ifm-code-font-size: 95%;
   --ifm-font-weight-semibold: 600;
 
-   --ifm-heading-font-family: Gilmer-Bold, Geneva, Tahoma, Helvetica, Verdana;
+  --ifm-heading-font-family: Gilmer-Bold, Geneva, Tahoma, Helvetica, Verdana;
   --ifm-font-family-base: MetroSans-SemiBold, "Open Sans";
   --font-family-link: MetroSans-Regular, "Open Sans";
 
@@ -35,45 +37,69 @@
   --font-family-caption-700: MetroSans-Bold, "Open Sans";
 }
 
+// homepage heading styles
 
-/*
-/*
-/* Titles */
+.homepage {
+  /*
+  /*
+  /* Titles */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ifm-heading-font-family);
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ifm-heading-font-family);
+  }
+
+  h1 {
+    line-height: 8rem;
+    font-weight: 700;
+    font-size: var(--h1-font-size);
+  }
+
+  h2 {
+    line-height: 6rem;
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+  }
+
+  h3 {
+    line-height: 4.75rem;
+    font-weight: 700;
+    font-size: var(--h3-font-size);
+  }
+
+  h4 {
+    line-height: 4rem;
+    font-weight: 700;
+    font-size: var(--h4-font-size);
+  }
+
+  h5 {
+    line-height: 3.25rem;
+    font-weight: 700;
+    font-size: var(--h5-font-size);
+  }
+
+  h6 {
+    line-height: 2.75rem;
+    font-weight: 600;
+    font-size: var(--h6-font-size);
+  }
+
+  .h7, .h8, .h9 {
+    font-family: var(--ifm-heading-font-family);
+  }
+
+  .h7 {
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-size: var(--h7-font-size);
+  }
+
+  .h8 {
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: var(--h8-font-size);
+  }
 }
-
-h1 {
-  line-height: 8rem;
-  font-weight: 700;
-}
-
-h2 {
-  line-height: 6rem;
-  font-weight: 700;
-}
-
-h3 {
-  line-height: 4.75rem;
-  font-weight: 700;
-}
-
-h4 {
-  line-height: 4rem;
-  font-weight: 700;
-}
-
-h5 {
-  line-height: 3.25rem;
-  font-weight: 700;
-}
-
-h6 {
-  line-height: 2.75rem;
-  font-weight: 600;
-}
-
 
 /*
 /*
@@ -165,10 +191,7 @@ h6 {
 /* Buttons */
 
 .button {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
-  font-family: var(--font-family-button);
+  @extend .body-1-16-600;
 }
 
 /*
