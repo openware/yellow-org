@@ -37,65 +37,68 @@
   --font-family-caption-700: MetroSans-Bold, "Open Sans";
 }
 
+// homepage heading styles
 
-/*
-/*
-/* Titles */
+.homepage {
+  /*
+  /*
+  /* Titles */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ifm-heading-font-family);
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ifm-heading-font-family);
+  }
 
-h1 {
-  line-height: 8rem;
-  font-weight: 700;
-  font-size: var(--h1-font-size);
-}
+  h1 {
+    line-height: 8rem;
+    font-weight: 700;
+    font-size: var(--h1-font-size);
+  }
 
-h2 {
-  line-height: 6rem;
-  font-weight: 700;
-  font-size: var(--h2-font-size);
-}
+  h2 {
+    line-height: 6rem;
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+  }
 
-h3 {
-  line-height: 4.75rem;
-  font-weight: 700;
-  font-size: var(--h3-font-size);
-}
+  h3 {
+    line-height: 4.75rem;
+    font-weight: 700;
+    font-size: var(--h3-font-size);
+  }
 
-h4 {
-  line-height: 4rem;
-  font-weight: 700;
-  font-size: var(--h4-font-size);
-}
+  h4 {
+    line-height: 4rem;
+    font-weight: 700;
+    font-size: var(--h4-font-size);
+  }
 
-h5 {
-  line-height: 3.25rem;
-  font-weight: 700;
-  font-size: var(--h5-font-size);
-}
+  h5 {
+    line-height: 3.25rem;
+    font-weight: 700;
+    font-size: var(--h5-font-size);
+  }
 
-h6 {
-  line-height: 2.75rem;
-  font-weight: 600;
-  font-size: var(--h6-font-size);
-}
+  h6 {
+    line-height: 2.75rem;
+    font-weight: 600;
+    font-size: var(--h6-font-size);
+  }
 
-.h7, .h8, .h9 {
-  font-family: var(--ifm-heading-font-family);
-}
+  .h7, .h8, .h9 {
+    font-family: var(--ifm-heading-font-family);
+  }
 
-.h7 {
-  line-height: 2.5rem;
-  font-weight: 600;
-  font-size: var(--h7-font-size);
-}
+  .h7 {
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-size: var(--h7-font-size);
+  }
 
-.h8 {
-  line-height: 2rem;
-  font-weight: 600;
-  font-size: var(--h8-font-size);
+  .h8 {
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: var(--h8-font-size);
+  }
 }
 
 /*

@@ -9,11 +9,14 @@ export default function Home() {
     return (
         <Layout
             title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
-            <Hero />
-            <main>
-                <Contacts/>
-            </main>
+            description="Description will go into a meta tag in <head />"
+        >
+            <div className="homepage">
+                <Hero />
+                <main>
+                    <Contacts/>
+                </main>
+            </div>
         </Layout>
     );
 }
