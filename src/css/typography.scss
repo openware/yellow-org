@@ -5,12 +5,12 @@
 @import '../../static/fonts/metro-sans-semi-bold/webfonts/metro-sans-semi-bold.css';
 
 :root {
-  --ifm-h1-font-size: 8rem;
-  --ifm-h2-font-size: 6rem;
-  --ifm-h3-font-size: 4.5rem;
-  --ifm-h4-font-size: 3.75rem;
-  --ifm-h5-font-size: 3rem;
-  --ifm-h6-font-size: 2.25rem;
+  --h1-font-size: 8rem;
+  --h2-font-size: 6rem;
+  --h3-font-size: 4.5rem;
+  --h4-font-size: 3.75rem;
+  --h5-font-size: 3rem;
+  --h6-font-size: 2.25rem;
 
   --ifm-code-font-size: 95%;
   --ifm-font-weight-semibold: 600;
@@ -47,31 +47,37 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   line-height: 8rem;
   font-weight: 700;
+  font-size: var(--h1-font-size);
 }
 
 h2 {
   line-height: 6rem;
   font-weight: 700;
+  font-size: var(--h2-font-size);
 }
 
 h3 {
   line-height: 4.75rem;
   font-weight: 700;
+  font-size: var(--h3-font-size);
 }
 
 h4 {
   line-height: 4rem;
   font-weight: 700;
+  font-size: var(--h4-font-size);
 }
 
 h5 {
   line-height: 3.25rem;
   font-weight: 700;
+  font-size: var(--h5-font-size);
 }
 
 h6 {
   line-height: 2.75rem;
   font-weight: 600;
+  font-size: var(--h6-font-size);
 }
 
 
