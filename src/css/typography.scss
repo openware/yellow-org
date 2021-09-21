@@ -165,10 +165,7 @@ h6 {
 /* Buttons */
 
 .button {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
-  font-family: var(--font-family-button);
+  @extend .body-1-16-600;
 }
 
 /*
