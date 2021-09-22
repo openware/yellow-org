@@ -34,6 +34,7 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-color-secondary: var(--text-color-100);
   --ifm-font-color-base: var(--text-color-100);
+  --ifm-heading-color: var(--text-color-100);
 
   --ifm-navbar-background-color: var(--ifm-color-primary);
   --ifm-navbar-link-color: #272727;
@@ -58,6 +59,10 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+  --ifm-heading-color: var(--text-color-00);
 }
 
 a {
