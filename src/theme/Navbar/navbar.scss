@@ -35,3 +35,11 @@
     }
   }
 }
+
+.navbar-sidebar {
+  z-index: 1;
+}
+
+.navbar-sidebar--show .navbar-sidebar, .navbar-sidebar--show .navbar-sidebar__backdrop {
+  z-index: 1;
+}

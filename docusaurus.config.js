@@ -26,11 +26,6 @@ module.exports = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/openware/finex',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {

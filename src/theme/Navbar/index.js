@@ -18,6 +18,7 @@ import {
     useHistoryPopHandler,
 } from '@docusaurus/theme-common';
 import { useHistory } from '@docusaurus/router';
+import Link from '@docusaurus/Link';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import useWindowSize from '@theme/hooks/useWindowSize';
@@ -108,7 +109,7 @@ function useSecondaryMenu({
     });
     const previousContent = usePrevious(content);
 
-    const [shown, setShown] = useState<boolean>(() => {
+    const [shown, setShown] = useState(() => {
         // /!\ content is set with useEffect,
         // so it's not available on mount anyway
         // "return !!content" => always returns false
@@ -246,13 +247,13 @@ function Navbar() {
                 <div className="navbar__items">
                     {(items?.length > 0 || activeDocPlugin) && (
                         <button
-                        aria-label="Navigation bar toggle"
-                        className="navbar__toggle clean-btn"
-                        type="button"
-                        tabIndex={0}
-                        onClick={mobileSidebar.toggle}
-                        onKeyDown={mobileSidebar.toggle}>
-                        <IconMenu />
+                            aria-label="Navigation bar toggle"
+                            className="navbar__toggle clean-btn"
+                            type="button"
+                            tabIndex={0}
+                            onClick={mobileSidebar.toggle}
+                            onKeyDown={mobileSidebar.toggle}>
+                            <IconMenu />
                         </button>
                     )}
                     <Logo
@@ -268,6 +269,11 @@ function Navbar() {
                     {rightItems.map((item, i) => (
                         <NavbarItem {...item} key={i} />
                     ))}
+                    <Link
+                        className="button button--secondary margin-right--md"
+                        to="/">
+                        <span className="button__inner">Litepaper</span>
+                    </Link>
                     {!colorModeToggle.disabled &&
                     !DISABLE_SWITCH_FOR_ROUTES.includes(history.location.pathname) && (
                         <Toggle
