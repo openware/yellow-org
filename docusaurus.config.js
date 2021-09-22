@@ -78,6 +78,11 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Yellow, Inc.`,
     },
+    colorMode: {
+      // Hides the switch in the navbar
+      // Useful if you want to support a single color mode
+      disableSwitch: true,
+    },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
