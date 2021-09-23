@@ -1,0 +1,37 @@
+.section {
+  padding: var(--landing-block-padding) 0;
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 928px;
+    min-width: min-content;
+    margin: 0 auto;
+
+    > * {
+      text-align: center;
+    }
+
+    &-title {
+      margin-bottom: 36px;
+    }
+
+    &-text {
+      margin-bottom: 48px;
+    }
+
+    &-img {
+      margin-bottom: 48px;
+
+      img:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__yellow {
+    background-color: var(--primary-cta-color-80);
+  }
+}
