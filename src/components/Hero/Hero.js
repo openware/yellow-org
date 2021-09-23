@@ -17,12 +17,12 @@ export default function Hero() {
                             <Link
                                 className="button button--secondary margin-right--md"
                                 to="/docs/intro">
-                                <span className="button__inner">Tutorial</span>
+                                <span className="button__inner">Docs</span>
                             </Link>
                             <Link
                                 className="button button--outline button--secondary"
-                                to="/docs/intro">
-                                <span className="button__inner">Blog</span>
+                                to="https://t.me/yellow_org">
+                                <span className="button__inner">Follow us</span>
                             </Link>
                         </div>
                     </div>

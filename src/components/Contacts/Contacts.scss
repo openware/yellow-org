@@ -1,6 +1,6 @@
 .contacts {
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding-top: var(--landing-block-padding);
+  padding-bottom: var(--landing-block-padding);
 
   &--title {
     margin-bottom: 18px;

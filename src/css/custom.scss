@@ -5,7 +5,7 @@
  * work well for content-centric websites.
  */
 
-@import "../theme/components/styles.scss";
+@import "../theme/styles.scss";
 @import "./typography.scss";
 @import "../components/styles.scss";
 
@@ -16,9 +16,13 @@
   --secondary-control-layer-color-40: #A79442;
   --secondary-control-layer-color-90: #000000;
   --text-color-00: #FFFFFF;
+  --text-color-60: #737373;
   --text-color-90: #272727;
   --text-color-100: #090909;
   --system-blue-60: #2563EB;
+  --neutral-control-layer-color-70: #2C2C2C;
+  --neutral-control-layer-color-80: #000000;
+
 
   --ifm-color-primary: #FCD000;
   --ifm-link-color: var(--system-blue-60);
@@ -31,15 +35,24 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-color-secondary: var(--text-color-100);
   --ifm-font-color-base: var(--text-color-100);
+  --ifm-heading-color: var(--text-color-100);
 
   --ifm-navbar-background-color: var(--ifm-color-primary);
   --ifm-navbar-link-color: #272727;
   --ifm-navbar-link-hover-color: #272727;
   --ifm-navbar-item-padding-horizontal: 0px;
+
   --ifm-footer-link-color: var(--text-color-00);
-  
+  --footer-background-color: var(--neutral-control-layer-color-80);
+  --footer-color: var(--text-color-60);
+
+  --ifm-menu-color: var(--text-color-90);
+  --ifm-menu-color-active: var(--text-color-100);
+  --ifm-color-emphasis-600: var(--text-color-90);
+
   --layout-width: 1272px;
   --ifm-container-width-xl: calc(var(--layout-width) + (var(--ifm-spacing-horizontal) * 2));
+  --landing-block-padding: 112px;
 }
 
 .docusaurus-highlight-code-line {
@@ -51,6 +64,10 @@
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+  --ifm-heading-color: var(--text-color-00);
 }
 
 a {

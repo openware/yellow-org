@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Yellow.org',
-  tagline: 'State channels scale peer-to-peer blockchain interactions.',
+  tagline: 'High performance spot trading exchange.',
   url: 'https://www.yellow.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -19,18 +19,11 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/openware/finex',
-          label: 'GitHub',
-          position: 'right',
-        },
+        {to: '/#about', label: 'About', position: 'left'},
+        {to: '/#token', label: 'Token', position: 'left'},
+        {to: '/#roadmap', label: 'Roadmap', position: 'left'},
+        {to: '/#team', label: 'Team', position: 'left'},
+        {to: '/blog', label: 'News', position: 'left'},
       ],
     },
     footer: {
