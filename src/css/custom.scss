@@ -82,3 +82,9 @@ a {
     padding-bottom: 2px;
   }
 }
+
+@media screen and (max-width: 966px) {
+  :root {
+    --landing-block-padding: 72px;
+  }
+}

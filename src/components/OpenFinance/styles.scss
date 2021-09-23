@@ -35,3 +35,17 @@
     background-color: var(--primary-cta-color-80);
   }
 }
+
+@media screen and (max-width: 966px) {
+  .section {
+    &__center {
+      width: 100%;
+
+      &-img {
+        img {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+}

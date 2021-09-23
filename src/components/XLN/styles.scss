@@ -41,3 +41,9 @@
     }
   }
 }
+
+@media screen and (max-width: 966px) {
+  .section .blocks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
