@@ -54,4 +54,13 @@ html[data-theme='dark'] {
   .navbar__toggle {
     color: var(--text-color-90);
   }
+
+  .navbar-sidebar {
+    --ifm-menu-color: var(--text-color-100);
+    --ifm-menu-color-active: var(--text-color-100);
+
+    &__back {
+      color: var(--text-color-100);
+    }
+  }
 }

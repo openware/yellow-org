@@ -69,6 +69,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 html[data-theme='dark'] {
   --ifm-heading-color: var(--text-color-00);
   --ifm-font-color-base: var(--text-color-00);
+  --ifm-menu-color: var(--text-color-00);
+  --ifm-menu-color-active: var(--text-color-00);
 
   --ifm-color-emphasis-600: var(--text-color-90);
 }
