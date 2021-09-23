@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "@docusaurus/Link";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const pieChartItems = [
     {
@@ -74,7 +75,7 @@ export default function Tokenomics() {
                     </div>
 
                     <div className="col col--6 tokenomics__pie-chart--wrapper">
-                        <img src="/static/img/tokenomics_pie_chart.png"></img>
+                        <img src={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
 
                         <div className="tokenomics__pie-chart--total-supply">
                             <span className="subtitle-2-18-400">
