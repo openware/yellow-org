@@ -33,8 +33,20 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Overview',
+              to: '/docs/overview/what-is-xln',
+            },
+            {
+              label: 'Concepts',
+              to: '/docs/concepts/architecture',
+            },
+            {
+              label: 'Token Economics',
+              to: '/docs/token-economics/overview',
+            },
+            {
+              label: 'Roadmap',
+              to: '/docs/roadmap/milestones',
             },
           ],
         },

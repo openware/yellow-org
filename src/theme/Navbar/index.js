@@ -271,7 +271,7 @@ function Navbar() {
                     ))}
                     <Link
                         className="button button--secondary margin-right--md"
-                        to="/">
+                        to="/docs/overview/what-is-xln">
                         <span className="button__inner">Litepaper</span>
                     </Link>
                     {!colorModeToggle.disabled &&
