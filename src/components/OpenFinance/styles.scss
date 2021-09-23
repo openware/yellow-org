@@ -1,6 +1,14 @@
 .section {
   padding: var(--landing-block-padding) 0;
 
+  &-title {
+    margin-bottom: 36px;
+  }
+
+  &-text {
+    margin-bottom: 48px;
+  }
+
   &__center {
     display: flex;
     flex-direction: column;
@@ -14,14 +22,6 @@
       text-align: center;
     }
 
-    &-title {
-      margin-bottom: 36px;
-    }
-
-    &-text {
-      margin-bottom: 48px;
-    }
-
     &-img {
       margin-bottom: 48px;
 
@@ -33,5 +33,19 @@
 
   &__yellow {
     background-color: var(--primary-cta-color-80);
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .section {
+    &__center {
+      width: 100%;
+
+      &-img {
+        img {
+          margin-right: 0 !important;
+        }
+      }
+    }
   }
 }
