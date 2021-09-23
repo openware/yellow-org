@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Hero from '../components/Hero/Hero';
+import OpenFinance from '../components/OpenFinance/OpenFinance';
 import Contacts from '../components/Contacts/Contacts';
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
             <div className="homepage">
                 <Hero />
                 <main>
-                    <Contacts/>
+                    <Contacts />
+                    <OpenFinance />
                 </main>
             </div>
         </Layout>
