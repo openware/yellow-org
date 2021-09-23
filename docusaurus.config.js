@@ -28,6 +28,10 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'Yellow Chain',
+        src: 'img/logo-white.svg',
+      },
       links: [
         {
           title: 'Docs',
@@ -62,8 +66,8 @@ module.exports = {
               href: 'https://discordapp.com/invite/yellow',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/yellow',
+              label: 'Telegram',
+              href: 'https://t.me/yellow_org',
             },
           ],
         },
