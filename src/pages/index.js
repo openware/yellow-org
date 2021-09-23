@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import OpenFinance from '../components/OpenFinance';
 import XLN from '../components/XLN';
 import HowItWorks from '../components/HowItWorks';
+import Tokenomics from '../components/Tokenomics/Tokenomics';
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
@@ -15,6 +16,7 @@ export default function Home() {
         >
             <div className="homepage">
                 <Hero />
+                <Tokenomics />
                 <main>
                     <XLN />
                     <HowItWorks />

@@ -15,6 +15,7 @@
   --primary-cta-color-80: #FCD000;
   --dark-background-color: #101010;
   --secondary-control-color-60: #FCD000;
+  --secondary-control-color-90: #ECAA00;
   --secondary-control-layer-color-40: #A79442;
   --secondary-control-layer-color-60: #000000;
   --secondary-control-layer-color-90: #000000;
@@ -23,6 +24,7 @@
   --text-color-90: #272727;
   --text-color-100: #090909;
   --system-blue-60: #2563EB;
+  --neutral-control-layer-color-10: #F8F8F8;
   --neutral-control-layer-color-70: #2C2C2C;
   --neutral-control-layer-color-80: #000000;
 
@@ -82,6 +84,20 @@ a {
     border-bottom: 2px solid var(--ifm-color-primary);
     padding-bottom: 2px;
   }
+}
+
+.section {
+  padding: var(--landing-block-padding) 0;
+
+  &--grey {
+    background-color: var(--neutral-control-layer-color-10);
+  }
+}
+
+.subtitle-with-bg-primary {
+  background-color: var(--ifm-color-primary);
+  border-radius: 2px;
+  padding: 4px 14px 6px 14px;
 }
 
 @media screen and (max-width: 966px) {

@@ -1,0 +1,72 @@
+.tokenomics {
+  padding-top: 25px;
+  padding-bottom: 58px;
+
+  h4 {
+    margin: 18px 0 24px;
+  }
+
+  &__utilities-list {
+    list-style-type: square;
+    margin: 20px 0;
+  }
+
+  &__pie-chart {
+    &--wrapper {
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: 12px;
+      }
+    }
+
+    &--total-supply {
+      text-align: center;
+      position: absolute;
+      top: 46%;
+      left: 100px;
+    }
+
+    &--item {
+      position: absolute;
+      right: 60px;
+
+      &--first {
+        top: -33px;
+      }
+
+      &--second {
+        top: 84px;
+      }
+
+      &--third {
+        bottom: 57px;
+      }
+
+      &--fourth {
+        bottom: -61px;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--secondary-control-color-90);
+        top: 9px;
+        left: -36px;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 36px;
+    width: 198px;
+  }
+}
