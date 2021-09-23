@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Frontend
 
-Frontend - is a boilerplate client with a set of libraries that can be used for customisation. 
+Frontend - is a boilerplate client with a set of libraries that can be used for customization.
 
 ![Frontend](/img/components/frontend.png)
 
