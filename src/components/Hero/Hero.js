@@ -14,7 +14,7 @@ export default function Hero() {
                 <div className="row">
                     <div className="col col--7">
                         <h4 className={styles.heroText}>{siteConfig.tagline}</h4>
-                        <p className={`${styles.heroText} h8`}>
+                        <p className={clsx('h8', styles.heroText, styles.heroDescription)}>
                             Yellow is a new generation hybrid exchange combining the best of decentralized and centralized performance.
                         </p>
                         <div className={styles.buttons}>

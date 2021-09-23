@@ -10,6 +10,10 @@
   color: var(--text-color-100);
 }
 
+.heroDescription {
+  margin: 36px 0;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
