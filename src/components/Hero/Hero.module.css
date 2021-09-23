@@ -10,6 +10,10 @@
   color: var(--text-color-100);
 }
 
+.heroDescription {
+  margin: 36px 0;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
@@ -20,4 +24,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.twitterIcon {
+  float: left;
+  margin-top: 1px;
+  margin-left: -10px;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
 }
