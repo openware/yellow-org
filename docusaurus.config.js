@@ -91,6 +91,9 @@ module.exports = {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
     },
+    gtag: {
+      trackingID: 'UA-180725760-3',
+    },
   },
   presets: [
     [
