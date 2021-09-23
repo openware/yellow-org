@@ -191,11 +191,11 @@ function NavbarMobileSidebar({
             <div
                 className={clsx('navbar-sidebar__items', {
                 'navbar-sidebar__items--show-secondary': secondaryMenu.shown,
-                })}>
+            })}>
                 <div className="navbar-sidebar__item menu">
                     <ul className="menu__list">
                         {items.map((item, i) => (
-                        <NavbarItem mobile {...item} onClick={toggleSidebar} key={i} />
+                            <NavbarItem mobile {...item} onClick={toggleSidebar} key={i} />
                         ))}
                     </ul>
                 </div>
