@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './Hero.module.css';
 import Link from '@docusaurus/Link';
 
@@ -21,8 +22,11 @@ export default function Hero() {
                             </Link>
                             <Link
                                 className="button button--outline button--secondary"
-                                to="https://t.me/yellow_org">
-                                <span className="button__inner">Follow us</span>
+                                to="https://twitter.com/yellow_defi">
+                                <span className="button__inner">
+                                    <img src={useBaseUrl('/img/icons/twitter.svg')} className={styles.twitterIcon} />
+                                    Follow us
+                                </span>
                             </Link>
                         </div>
                     </div>
