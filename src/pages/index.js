@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Hero from '../components/Hero';
 import OpenFinance from '../components/OpenFinance';
 import XLN from '../components/XLN';
+import HowItWorks from '../components/HowItWorks';
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
@@ -16,6 +17,7 @@ export default function Home() {
                 <Hero />
                 <main>
                     <XLN />
+                    <HowItWorks />
                     <OpenFinance />
                 </main>
             </div>
