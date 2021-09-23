@@ -1,0 +1,28 @@
+.how-it-works {
+  &-telegram-icon {
+    float: left;
+    margin-top: 1px;
+    margin-left: -10px;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+  }
+
+  &-list {
+    margin-bottom: 24px;
+  }
+
+  &-img > img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 996px) {
+    &-img {
+      display: none;
+    }
+  }
+}
