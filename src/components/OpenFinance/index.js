@@ -7,8 +7,8 @@ export default function OpenFinance() {
         <div className="section section__yellow">
             <div className="container">
                 <div className="row section__center">
-                    <h4 className="section__center-title">Open Finance Ecosystem</h4>
-                    <p className="h8 section__center-text">
+                    <h4 className="section-title">Open Finance Ecosystem</h4>
+                    <p className="h8 section-text">
                         We joined the Open Finance Ecosystem to supports initiatives
                         of the new financial layer. The aim of this movement is to define
                         a new communication standard for emerging financial services.

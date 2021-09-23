@@ -1,6 +1,14 @@
 .section {
   padding: var(--landing-block-padding) 0;
 
+  &-title {
+    margin-bottom: 36px;
+  }
+
+  &-text {
+    margin-bottom: 48px;
+  }
+
   &__center {
     display: flex;
     flex-direction: column;
@@ -12,14 +20,6 @@
 
     > * {
       text-align: center;
-    }
-
-    &-title {
-      margin-bottom: 36px;
-    }
-
-    &-text {
-      margin-bottom: 48px;
     }
 
     &-img {
