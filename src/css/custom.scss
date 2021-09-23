@@ -21,6 +21,7 @@
   --text-color-100: #090909;
   --system-blue-60: #2563EB;
   --neutral-control-layer-color-70: #2C2C2C;
+  --neutral-control-layer-color-80: #000000;
 
 
   --ifm-color-primary: #FCD000;
@@ -42,12 +43,16 @@
   --ifm-navbar-item-padding-horizontal: 0px;
 
   --ifm-footer-link-color: var(--text-color-00);
-  --footer-background-color: var(--neutral-control-layer-color-70);
+  --footer-background-color: var(--neutral-control-layer-color-80);
   --footer-color: var(--text-color-60);
 
+  --ifm-menu-color: var(--text-color-90);
+  --ifm-menu-color-active: var(--text-color-100);
+  --ifm-color-emphasis-600: var(--text-color-90);
+
   --layout-width: 1272px;
-  --landing-block-padding: 112px;
   --ifm-container-width-xl: calc(var(--layout-width) + (var(--ifm-spacing-horizontal) * 2));
+  --landing-block-padding: 112px;
 }
 
 .docusaurus-highlight-code-line {

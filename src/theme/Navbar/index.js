@@ -294,8 +294,8 @@ function Navbar() {
 
             {mobileSidebar.shouldRender && (
                 <NavbarMobileSidebar
-                sidebarShown={mobileSidebar.shown}
-                toggleSidebar={mobileSidebar.toggle}
+                    sidebarShown={mobileSidebar.shown}
+                    toggleSidebar={mobileSidebar.toggle}
                 />
             )}
         </nav>
