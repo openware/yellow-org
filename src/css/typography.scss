@@ -217,3 +217,10 @@
   font-weight: 700;
   font-family: var(--font-family-caption-700);
 }
+
+
+@media screen and (max-width: 997px) {
+  html {
+    font-size: 87.5%;
+  }
+}

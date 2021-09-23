@@ -49,3 +49,9 @@
     display: none;
   }
 }
+
+html[data-theme='dark'] {
+  .navbar__toggle {
+    color: var(--text-color-90);
+  }
+}
