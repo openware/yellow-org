@@ -90,6 +90,7 @@ export default function Tokenomics() {
                         {pieChartItems.map(
                             ({ percent, tokensCount, title, className }) => (
                                 <div
+                                    key={title}
                                     className={`tokenomics__pie-chart--item  ${className}`}
                                 >
                                     <p className="h7">{percent}</p>
