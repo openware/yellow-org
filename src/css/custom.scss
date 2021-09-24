@@ -86,20 +86,6 @@ a {
   }
 }
 
-.section {
-  padding: var(--landing-block-padding) 0;
-
-  &--grey {
-    background-color: var(--neutral-control-layer-color-10);
-  }
-}
-
-.subtitle-with-bg-primary {
-  background-color: var(--ifm-color-primary);
-  border-radius: 2px;
-  padding: 4px 14px 6px 14px;
-}
-
 @media screen and (max-width: 966px) {
   :root {
     --landing-block-padding: 72px;

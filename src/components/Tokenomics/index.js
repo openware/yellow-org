@@ -8,7 +8,7 @@ export default function Tokenomics() {
             <div className="container tokenomics">
                 <div className="row">
                     <div className="col col--6">
-                        <span className="subtitle-with-bg-primary subtitle-2-18-700">
+                        <span className="highlight subtitle-2-18-700">
                             Economy
                         </span>
 
@@ -37,7 +37,7 @@ export default function Tokenomics() {
                             <div>
                                 <Link
                                     className="button button--outline button--secondary button--shadow-secondary"
-                                    to="/docs/overview/what-is-xln"
+                                    to="/docs/concepts/architecture"
                                 >
                                     <span className="button__inner">
                                         Yellow Paper

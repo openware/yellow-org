@@ -1,9 +1,15 @@
+.section {
+  &--grey {
+    background-color: var(--neutral-control-layer-color-10);
+  }
+}
+
 .tokenomics {
   padding-top: 25px;
   padding-bottom: 58px;
 
   h4 {
-    margin: 18px 0 24px;
+    margin-bottom: 24px;
   }
 
   &__pie-chart {
