@@ -103,6 +103,9 @@
   }
 
   @media screen and (max-width: 1160px) {
+    padding-top: 0;
+    padding-bottom: 0;
+
     &__pie-chart {
       display: none;
     }
