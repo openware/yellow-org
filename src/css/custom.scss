@@ -13,6 +13,7 @@
 :root {
   --primary-cta-layer-color: #FFFFFF;
   --primary-cta-color-80: #FCD000;
+  --dark-background-color: #101010;
   --secondary-control-color-60: #FCD000;
   --secondary-control-layer-color-40: #A79442;
   --secondary-control-layer-color-60: #000000;
@@ -44,7 +45,7 @@
   --ifm-navbar-item-padding-horizontal: 0px;
 
   --ifm-footer-link-color: var(--text-color-00);
-  --footer-background-color: #101010;
+  --footer-background-color: var(--dark-background-color);
   --footer-color: var(--text-color-60);
 
   --ifm-menu-color: var(--text-color-90);

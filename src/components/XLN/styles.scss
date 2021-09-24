@@ -1,8 +1,8 @@
 .section {
   &__dark {
-    background-color: var(--text-color-90);
-
+    background-color: var(--dark-background-color);
     --ifm-heading-color: var(--text-color-00);
+
     > * {
       color: var(--text-color-00);
     }
