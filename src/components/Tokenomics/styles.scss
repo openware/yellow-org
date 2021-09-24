@@ -1,0 +1,44 @@
+.section {
+  &--grey {
+    background-color: var(--neutral-control-layer-color-10);
+  }
+}
+
+.tokenomics {
+  padding-top: 25px;
+  padding-bottom: 58px;
+
+  h4 {
+    margin-bottom: 24px;
+  }
+
+  &__pie-chart {
+    position: relative;
+    bottom: 47px;
+  }
+
+  &__utilities-list {
+    list-style-type: square;
+    margin: 20px 0;
+  }
+
+  .button {
+    margin-top: 36px;
+    width: 198px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__pie-chart {
+      bottom: -55px;
+    }
+  }
+
+  @media screen and (max-width: 996px) {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__pie-chart {
+      display: none;
+    }
+  }
+}
