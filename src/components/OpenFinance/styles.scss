@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 928px;
+    max-width: 982px;
     min-width: min-content;
     margin: 0 auto;
 
@@ -24,10 +24,9 @@
 
     &-img {
       margin-bottom: 48px;
-
-      img:not(:last-child) {
-        margin-right: 24px;
-      }
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 24px;
     }
   }
 
@@ -42,9 +41,8 @@
       width: 100%;
 
       &-img {
-        img {
-          margin-right: 0 !important;
-        }
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 18px;
       }
     }
   }
