@@ -16,11 +16,11 @@ export default function Home() {
         >
             <div className="homepage">
                 <Hero />
-                <Tokenomics />
                 <main>
                     <XLN />
                     <HowItWorks />
                     <OpenFinance />
+                    <Tokenomics />
                 </main>
             </div>
         </Layout>
