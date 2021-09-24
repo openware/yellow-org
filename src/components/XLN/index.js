@@ -43,7 +43,7 @@ export default function XLN() {
                         <div className="blocks">
                             {blocks.map(i => {
                                 return (
-                                    <div className="icon-block">
+                                    <div key={i.title} className="icon-block">
                                         <img className="icon-block__img" src={useBaseUrl(i.src)} />
                                         <div className="subtitle-1-20-600 icon-block__title">{i.title}</div>
                                         <p className="icon-block__text">{i.text}</p>
