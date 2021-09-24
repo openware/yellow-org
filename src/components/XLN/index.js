@@ -28,7 +28,7 @@ const blocks = [
 export default function XLN() {
     return (
         <div className="section section__dark">
-            <div className="container">
+            <div className="container xln">
                 <div className="row">
                     <div className="col col--5">
                     </div>

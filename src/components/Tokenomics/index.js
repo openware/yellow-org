@@ -4,7 +4,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 export default function Tokenomics() {
     return (
-        <div className="section section--grey">
+        <div className="section section__grey">
             <div className="container tokenomics">
                 <div className="row">
                     <div className="col col--6">

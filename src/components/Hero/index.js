@@ -26,7 +26,7 @@ export default function Hero() {
                                     className="button button--outline button--secondary"
                                     to="https://twitter.com/yellow_defi">
                                     <span className="button__inner">
-                                        <img src={useBaseUrl('/img/icons/twitter.svg')} className="twitterIcon" />
+                                        <img src={useBaseUrl('/img/icons/twitter.svg')} className="button__icon-left" />
                                         Follow us
                                     </span>
                                 </Link>
