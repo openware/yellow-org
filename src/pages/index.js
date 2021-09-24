@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import Hero from '../components/Hero';
 import OpenFinance from '../components/OpenFinance';
@@ -7,6 +7,10 @@ import HowItWorks from '../components/HowItWorks';
 import Tokenomics from '../components/Tokenomics';
 
 export default function Home() {
+    useEffect(() => {
+        document.getElementsByTagName('html')[0].setAttribute('data-theme', 'light');
+    })
+
     return (
         <Layout
             title="Yellow DeFi - Discover WEB 3.0 Internet of Finance"
