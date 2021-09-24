@@ -9,7 +9,7 @@
   }
 
   &__banner {
-    padding: var(--landing-block-padding) 0;
+    padding: 42px 0 89px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -28,5 +28,25 @@
     margin-right: 10px;
     width: 22px;
     height: 22px;
-  }  
+  }
+
+  &-left {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-img {
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+
+  @media screen and (max-width: 996px) {
+    &-img {
+      display: none;
+    }
+  }
 }
