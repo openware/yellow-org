@@ -243,7 +243,7 @@ function Navbar() {
                 [styles.navbarHideable]: hideOnScroll,
                 [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
             })}>
-            <div className="navbar__inner">
+            <div className="navbar__inner container">
                 <div className="navbar__items">
                     {(items?.length > 0 || activeDocPlugin) && (
                         <button
