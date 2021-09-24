@@ -6,21 +6,8 @@
  */
 
 :root {
-  --doc-sidebar-width: 300px;
+  --doc-sidebar-width: 326px;
   --doc-sidebar-hidden-width: 30px;
-}
-
-:global(.docs-wrapper) {
-  display: flex;
-  margin: 1rem auto;
-  max-width: var(--ifm-container-width);
-  width: 100%;
-}
-
-@media (min-width: 1440px) {
-  :global(.docs-wrapper) {
-    max-width: var(--ifm-container-width-xl);
-  }
 }
 
 .docPage,
@@ -33,17 +20,11 @@
   display: none;
 }
 
-.docs-wrapper {
-  margin: 1rem auto;
-  max-width: var(--ifm-container-width);
-  width: 100%;
-
-  @media (min-width: 1440px) {
-    max-width: var(--ifm-container-width-xl);
-  }
-}
-
 @media (min-width: 997px) {
+  .docPage {
+    --ifm-spacing-horizontal: 24px;
+  }
+
   .docMainContainer {
     flex-grow: 1;
     max-width: calc(100% - var(--doc-sidebar-width));

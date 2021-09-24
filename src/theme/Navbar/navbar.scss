@@ -46,6 +46,12 @@
   }
 }
 
+@media screen and (min-width: 998px) {
+  .navbar {
+    --ifm-navbar-padding-horizontal: 0;
+  }
+}
+
 html[data-theme='dark'] {
   .navbar__toggle {
     color: var(--text-color-90);
