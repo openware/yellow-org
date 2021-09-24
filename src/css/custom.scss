@@ -58,6 +58,7 @@
   --layout-width: 1272px;
   --ifm-container-width-xl: calc(var(--layout-width) + (var(--ifm-spacing-horizontal) * 2));
   --landing-block-padding: 132px;
+  --ifm-navbar-height: 62px;
 }
 
 .docusaurus-highlight-code-line {
@@ -78,13 +79,6 @@ html[data-theme='dark'] {
   --ifm-menu-color-active: var(--text-color-00);
 
   --ifm-color-emphasis-600: var(--text-color-90);
-}
-
-a {
-  b:hover {
-    border-bottom: 2px solid var(--ifm-color-primary);
-    padding-bottom: 2px;
-  }
 }
 
 @media screen and (max-width: 966px) {
