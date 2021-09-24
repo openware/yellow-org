@@ -33,6 +33,29 @@
   &__yellow {
     background-color: var(--primary-cta-color-80);
   }
+
+  &__grey {
+    background-color: var(--neutral-control-layer-color-10);
+  }
+
+  &__dark {
+    background-color: var(--dark-background-color);
+    --ifm-heading-color: var(--text-color-00);
+
+    > * {
+      color: var(--text-color-00);
+    }
+  }
+
+  .highlight {
+    background-color: var(--primary-cta-color-80);
+    color: var(--secondary-control-layer-color-60);
+    padding: 3px 14px;
+    border-radius: 2px;
+    margin-bottom: 18px;
+    display: block;
+    width: max-content;
+  }
 }
 
 @media screen and (max-width: 966px) {
