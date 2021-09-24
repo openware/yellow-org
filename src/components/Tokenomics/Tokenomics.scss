@@ -12,13 +12,11 @@
   }
 
   &__pie-chart {
-    &--wrapper {
-      position: relative;
+    position: relative;
 
-      img {
-        position: absolute;
-        bottom: 12px;
-      }
+    img {
+      position: absolute;
+      bottom: 12px;
     }
 
     &--total-supply {
@@ -68,5 +66,45 @@
   .button {
     margin-top: 36px;
     width: 198px;
+  }
+
+  @media screen and (min-width: 1160px) and (max-width: 1439px) {
+    &__pie-chart {
+      img {
+        bottom: 72px;
+        width: 58%;
+      }
+
+      &--total-supply {
+        top: 50%;
+        left: 80px;
+      }
+
+      &--item {
+        right: 30px;
+
+        &--first {
+          top: 59px;
+        }
+
+        &--second {
+          top: 162px;
+        }
+
+        &--third {
+          bottom: 102px;
+        }
+
+        &--fourth {
+          bottom: -2px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1160px) {
+    &__pie-chart {
+      display: none;
+    }
   }
 }

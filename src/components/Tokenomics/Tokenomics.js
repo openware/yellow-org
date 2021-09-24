@@ -74,7 +74,7 @@ export default function Tokenomics() {
                         </div>
                     </div>
 
-                    <div className="col col--6 tokenomics__pie-chart--wrapper">
+                    <div className="col col--6 tokenomics__pie-chart">
                         <img src={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
 
                         <div className="tokenomics__pie-chart--total-supply">
