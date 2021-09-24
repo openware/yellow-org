@@ -5,6 +5,7 @@ import OpenFinance from '../components/OpenFinance';
 import XLN from '../components/XLN';
 import HowItWorks from '../components/HowItWorks';
 import Tokenomics from '../components/Tokenomics';
+import Partners from '../components/Partners';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
                     <HowItWorks />
                     <OpenFinance />
                     <Tokenomics />
+                    <Partners />
                 </main>
             </div>
         </Layout>
