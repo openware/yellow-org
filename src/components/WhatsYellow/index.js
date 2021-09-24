@@ -30,7 +30,7 @@ const blocks = [
 
 export default function WhatsYellow() {
     return (
-        <div className="section section__dark">
+        <div className="section section__dark" id="about">
             <div className="container overview">
                 <div className="row section__center">
                     <div className="section-title">

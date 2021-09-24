@@ -23,7 +23,7 @@ module.exports = {
       },
       items: [
         {to: '/#about', label: 'About', position: 'left'},
-        {to: '/#token', label: 'Token', position: 'left'},
+        {to: '/#tokenomics', label: 'Token', position: 'left'},
         {to: '/#roadmap', label: 'Roadmap', position: 'left'},
         {to: '/#team', label: 'Team', position: 'left'},
         {to: '/blog', label: 'News', position: 'left'},
