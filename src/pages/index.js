@@ -6,6 +6,7 @@ import XLN from '../components/XLN';
 import HowItWorks from '../components/HowItWorks';
 import Tokenomics from '../components/Tokenomics';
 import Partners from '../components/Partners';
+import WhatsYellow from '../components/WhatsYellow';
 
 export default function Home() {
     useEffect(() => {
@@ -20,6 +21,7 @@ export default function Home() {
             <div className="homepage">
                 <Hero />
                 <main>
+                    <WhatsYellow />
                     <XLN />
                     <HowItWorks />
                     <OpenFinance />
