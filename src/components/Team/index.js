@@ -42,8 +42,8 @@ export default function Team() {
                                     <span className="h7">{i.name}</span>
                                     {i.socials.length ? (
                                         <div className="icon__group">
-                                            {i.socials.map(s => (
-                                                <Link to={s.link}>
+                                            {i.socials.map((s, i) => (
+                                                <Link key={i.toString()} to={s.link}>
                                                     {s.img}
                                                 </Link>
                                             ))}
