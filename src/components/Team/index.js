@@ -30,7 +30,7 @@ const TEAM_HEADLINERS = [
 
 export default function Team() {
     return (
-        <div className="section section__dark">
+        <div className="section section__dark" id="team">
             <div className="container team">
                 <div className="row section__center">
                     <h4 className="section-title">Team</h4>
