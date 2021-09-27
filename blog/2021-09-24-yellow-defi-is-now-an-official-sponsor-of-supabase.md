@@ -8,13 +8,18 @@ author_image_url: https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hacke
 tags: [baas-services, firebase, supabase, yellow-defi, yellow-incubator]
 ---
 
+<!-- https://github.com/facebook/docusaurus/pull/2780 -->
+<!-- Docusaurus uses target="_blank" for all the external links by default. To override this behaviour and open a new link on the same tab we should use html <a> tag with target="_self". -->
+
+<p><img src="/img/components/supabase_logo.png" alt="Supabase" width="100%"/></p>
+
 There has been a rising trend for backend-as-a-service (BaaS). These are service models where developers will tend to outsource all of the fundamental aspects of web or mobile development and can focus their attention on the front end.
 
 This allows them to avoid any time restraints with writing code that would stay on the server.
 
 Typically, these platforms will be used to provide software for server-side activities, such as database management, storage, hosting, and so on.
 
-Let’s turn our attention to two main BaaS services, including [Firebase](https://firebase.google.com?ref=yellow.org) and an open-source alternative known as [Supabase](https://supabase.io?ref=yellow.org).
+Let’s turn our attention to two main BaaS services, including <a href="https://firebase.google.com?ref=yellow.org" target="_self">Firebase</a> and an open-source alternative known as <a href="https://supabase.io?ref=yellow.org" target="_self">Supabase</a>.
 
 ### Firebase Explained
 
@@ -30,7 +35,7 @@ The service was founded in 2011, and later acquired by Google in 2014
 
 ### Supabase Explained
 
-[Supabase](https://supabase.io?ref=yellow.org) is an open-source alternative to Firebase and is designed specifically to help developers set up their back-end within minutes.
+<p><a href="https://supabase.io?ref=yellow.org" target="_self">Supabase</a> is an open-source alternative to Firebase and is designed specifically to help developers set up their back-end within minutes.</p>
 
 You have a Postgres database, as well as an authentication service. The main point of appeal and how it differentiates itself is because all of its tools are open-source.
 
@@ -58,12 +63,12 @@ In any case, both of these solutions allow developers to focus less on the back-
 
 ### The Yellow Incubator
 
-Yellow Group includes the [Yellow Incubator](https://www.yellowincubator.com?ref=yellow.org), providing seed investments, advisory, and support to blockchain startups.
+Yellow Group includes the <a href="https://www.yellowincubator.com?ref=yellow.org" target="_self">Yellow Incubator</a>, providing seed investments, advisory, and support to blockchain startups.
 
 Furthermore, each of these projects gets mentorship, software solutions, as well as advisory on STOs, token economics, marketing, fundraising, and listing as the core offer.
 
-Additionally, the Yellow Incubator offers physical [co-working offices for digital nomads and blockchain startups](https://www.yellowcoworking.com?ref=yellow.org), for example Yellow Coworking space in Chiang Mai, Thailand.
+Additionally, the Yellow Incubator offers physical <a href="https://www.yellowcoworking.com?ref=yellow.org" target="_self">co-working offices for digital nomads and blockchain startups</a>, for example Yellow Coworking space in Chiang Mai, Thailand.
 
 Yellow DeFi is happy to have Supabase as the newest addition to the sponsorships provided by Yellow Group.
 
-Thank you for reading, and make sure to follow Yellow DeFi on Twitter for more updates https://twitter.com/yellow_defi
+Thank you for reading, and make sure to follow Yellow DeFi on Twitter for more updates <a href="https://twitter.com/yellow_defi" target="_self" value="">twitter.com/yellow_defi</a>
