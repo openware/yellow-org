@@ -90,12 +90,13 @@ function Footer() {
                                 </div>
                             )}
                             <p className={clsx('body-2-14-400 margin-bottom--md', styles.footerText)}>
-                                XLN is a layer 3 scaling solution for blockchains. We are connecting them to create the internet of finance. Come and join the future of the financial system!
+                                Yellow.org is a hybrid exchange that combines the benefits of centralized and decentralized worlds. Come and join the future of the financial system!
                             </p>
                             <div className={styles.footerSocials}>
                                 <Link to="https://www.reddit.com/r/yellow_defi/"><img src={useBaseUrl('/img/icons/reddit.svg')} loading="lazy" /></Link>
                                 <Link to="https://twitter.com/yellow_defi"><img src={useBaseUrl('/img/icons/twitter-white.svg')} loading="lazy" /></Link>
                                 <Link to="https://medium.com/yellow-blog"><img src={useBaseUrl('/img/icons/medium.svg')} loading="lazy" /></Link>
+                                <Link to="https://t.me/yellow_org"><img src={useBaseUrl('/img/icons/telegram-white.svg')} loading="lazy" /></Link>
                             </div>
                         </div>
                         {links.map((linkItem, i) => (
