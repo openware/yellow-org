@@ -8,12 +8,10 @@ author_image_url: https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hacke
 tags: [baas-services, firebase, supabase, yellow-defi, yellow-incubator]
 ---
 
-import supabaseLogoUrl from './img/supabase_logo.png';
-
 <!-- https://github.com/facebook/docusaurus/pull/2780 -->
 <!-- Docusaurus uses target="_blank" for all the external links by default. To override this behaviour and open a new link on the same tab we should use html <a> tag with target="_self". -->
 
-<p><img src={supabaseLogoUrl} alt="Supabase" width="100%"/></p>
+<p><img src="/img/components/supabase_logo.png" alt="Supabase" width="100%"/></p>
 
 There has been a rising trend for backend-as-a-service (BaaS). These are service models where developers will tend to outsource all of the fundamental aspects of web or mobile development and can focus their attention on the front end.
 
