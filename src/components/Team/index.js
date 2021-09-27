@@ -36,7 +36,7 @@ export default function Team() {
                     <h4 className="section-title">Team</h4>
                     <div className="team__grid-xl">
                         {TEAM_HEADLINERS.map(i => (
-                            <div className="grid__item">
+                            <div key={i.name} className="grid__item">
                                 <img className="mb-24" src={useBaseUrl(`/img/photos/${i.photo || 'anonymous.png'}`)} />
                                 <div className="space-between">
                                     <span className="h7">{i.name}</span>
