@@ -19,7 +19,7 @@ export default function Hero() {
                             <div className="hero__buttons">
                                 <Link
                                     className="button button--secondary margin-right--md"
-                                    to="/docs/overview/what-is-xln">
+                                    to="/docs/concepts/architecture">
                                     <span className="button__inner">Docs</span>
                                 </Link>
                                 <Link
