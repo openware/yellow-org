@@ -5,6 +5,7 @@ import OpenFinance from '../components/OpenFinance';
 import XLN from '../components/XLN';
 import HowItWorks from '../components/HowItWorks';
 import Tokenomics from '../components/Tokenomics';
+import Roadmap from '../components/Roadmap';
 import Partners from '../components/Partners';
 import WhatsYellow from '../components/WhatsYellow';
 import FeaturesOfYellow from '../components/FeaturesOfYellow';
@@ -26,6 +27,7 @@ export default function Home() {
                     <HowItWorks />
                     <OpenFinance />
                     <Tokenomics />
+                    <Roadmap />
                     <Team />
                     <Partners />
                     <Community />
