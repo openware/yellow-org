@@ -11,7 +11,7 @@ export default function Partners() {
                 <div className="row section__center">
                     <div className="section__center-img">
                         <img src={useBaseUrl("/img/openware.svg")} />
-                        <img src={useBaseUrl("/img/kycaid.svg")} />
+                        <img src={useBaseUrl("/img/kycaid.png")} />
                         <img src={useBaseUrl("/img/fireblocks.svg")} />
                         <img src={useBaseUrl("/img/custody_with_border.svg")} />
                     </div>
