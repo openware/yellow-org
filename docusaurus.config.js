@@ -13,6 +13,9 @@ module.exports = {
   organizationName: 'openware', // Usually your GitHub org/user name.
   projectName: 'yellow', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      disableSwitch: true,
+    },
     navbar: {
       logo: {
         alt: 'Yellow Chain',
