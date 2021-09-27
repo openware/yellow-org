@@ -89,6 +89,18 @@
       transform-origin: bottom left;
     }
   }
+
+  .yellow {
+    color: var(--primary-cta-color-80);
+  }
+
+  .mb-12 {
+    margin-bottom: 12px;
+  }
+
+  .mb-24 {
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 966px) {
