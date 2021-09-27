@@ -3,7 +3,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Roadmap() {
     return (
-        <div id="roadmap" className="section roadmap">
+        <div id="roadmap" className="section roadmap" id="roadmap">
             <div className="container">
                 <div className="row">
                     <div className="col col--6">
