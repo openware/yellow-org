@@ -40,20 +40,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Overview',
+              label: 'Vision',
               to: '/docs/overview/what-is-xln',
             },
             {
-              label: 'Concepts',
+              label: 'Architecture',
               to: '/docs/concepts/architecture',
             },
             {
-              label: 'Token Economics',
+              label: 'Tokenomics',
               to: '/docs/token-economics/overview',
-            },
-            {
-              label: 'Roadmap',
-              to: '/docs/roadmap/milestones',
             },
           ],
         },
@@ -69,8 +65,8 @@ module.exports = {
               href: 'https://discordapp.com/invite/yellow',
             },
             {
-              label: 'Telegram',
-              href: 'https://t.me/yellow_org',
+              label: 'Twitter',
+              href: 'https://twitter.com/yellow_defi',
             },
           ],
         },
