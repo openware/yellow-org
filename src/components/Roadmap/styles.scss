@@ -1,0 +1,22 @@
+.roadmap {
+  padding-top: 66px !important;
+  padding-bottom: 0 !important;
+
+  &-left {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-img {
+    height: 100%;
+  }
+
+  @media screen and (max-width: 996px) {
+    & {
+      display: none;
+    }
+  }
+}
