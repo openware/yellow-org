@@ -9,6 +9,7 @@ import Partners from '../components/Partners';
 import WhatsYellow from '../components/WhatsYellow';
 import FeaturesOfYellow from '../components/FeaturesOfYellow';
 import Team from '../components/Team';
+import Community from '../components/Community';
 
 export default function Home() {
     return (
@@ -25,8 +26,9 @@ export default function Home() {
                     <HowItWorks />
                     <OpenFinance />
                     <Tokenomics />
-                    <Partners />
                     <Team />
+                    <Partners />
+                    <Community />
                 </main>
             </div>
         </Layout>

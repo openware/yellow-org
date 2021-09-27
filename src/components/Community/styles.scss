@@ -1,0 +1,49 @@
+.community {
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+
+    &-item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      background-color: var(--secondary-control-color-40);
+      border-radius: 4px;
+      flex-grow: 1;
+      height: 256px;
+      max-width: 408px;
+
+      img {
+        height: 72px;
+        width: 72px;
+      }
+
+      .button {
+        width: 128px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    h4 {
+      font-size: var(--h5-font-size);
+    }
+
+    &__socials {
+      &-item {
+        img {
+          height: 56px;
+          width: 56px;
+        }
+
+        .button {
+          width: initial;
+        }
+      }
+    }
+  }
+}
