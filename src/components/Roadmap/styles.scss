@@ -15,8 +15,12 @@
   }
 
   @media screen and (max-width: 996px) {
-    & {
+    &-text {
       display: none;
+    }
+
+    &-img {
+      margin-top: 36px;
     }
   }
 }
