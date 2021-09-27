@@ -1,4 +1,8 @@
 .team {
+  .section__center {
+    max-width: 100%;
+  }
+
   &__grid-xl {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,6 +11,21 @@
     @media screen and (max-width: 996px) {
       grid-template-columns: 1fr;
       grid-row-gap: 24px;
+
+      .grid__item {
+        img {
+          max-width: 70%;
+          height: auto;
+        }
+
+        .space-between {
+          justify-content: flex-start !important;
+
+          .h7 {
+            margin-right: 24px;
+          }
+        }
+      }
     }
   }
 

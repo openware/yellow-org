@@ -55,9 +55,6 @@ export default function Team() {
                             </div>
                         ))}
                     </div>
-                    {/* <div className="team__grid-xs">
-
-                    </div> */}
                 </div>
             </div>
         </div>
