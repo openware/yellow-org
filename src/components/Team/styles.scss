@@ -7,10 +7,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
+    margin-bottom: 96px;
 
     @media screen and (max-width: 996px) {
       grid-template-columns: 1fr;
       grid-row-gap: 24px;
+      margin-bottom: 48px;
 
       .grid__item {
         img {
@@ -23,10 +25,71 @@
     }
   }
 
+  &__grid-xs {
+    display: grid;
+    grid-template-columns: repeat(8, 138px);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+
+    @media screen and (max-width: 996px) {
+      grid-template-columns: repeat(2, 138px);
+    }
+  
+    .grid__item {
+      height: 138px;
+      width: 138px;
+      border-radius: 8px;
+      padding: 18px;
+      position: relative;
+      color: var(--text-color-00);
+
+      &-icon, &-text {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--text-color-00);
+        transform: scale(1.25);
+        display: block;
+        transition: transform 0.1s ease-in-out;
+
+        &:after {
+          content: none;
+        }
+
+        .grid__item-icon, .grid__item-text {
+          display: block;
+          position: absolute;
+        }
+
+        .grid__item-text {
+          bottom: 18px;
+
+          p {
+            line-height: initial;
+            margin-bottom: 0;
+            font-size: calc(12px / 1.25);
+
+            &:first-child {
+              margin-bottom: 2px;
+              font-size: calc(16px / 1.25);
+            }
+          }
+        }
+      }
+    }
+  }
+
   .grid__item {
     display: flex;
     flex-direction: column;
     text-align: left;
+    background-size: auto 100%;
+
+    &-icon {
+      height: 24px;
+      width: 24px;
+    }
 
     .space-between {
       display: flex;
