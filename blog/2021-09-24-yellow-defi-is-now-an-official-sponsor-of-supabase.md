@@ -11,6 +11,8 @@ tags: [baas-services, firebase, supabase, yellow-defi, yellow-incubator]
 <!-- https://github.com/facebook/docusaurus/pull/2780 -->
 <!-- Docusaurus uses target="_blank" for all the external links by default. To override this behaviour and open a new link on the same tab we should use html <a> tag with target="_self". -->
 
+<p><img src="../static/img/supabase_logo.png" alt="Supabase" width="100%"/></p>
+
 There has been a rising trend for backend-as-a-service (BaaS). These are service models where developers will tend to outsource all of the fundamental aspects of web or mobile development and can focus their attention on the front end.
 
 This allows them to avoid any time restraints with writing code that would stay on the server.
