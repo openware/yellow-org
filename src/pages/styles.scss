@@ -56,6 +56,39 @@
     display: block;
     width: max-content;
   }
+
+  a {
+    width: max-content;
+    position: relative;
+
+    .arrow-right {
+      border: solid var(--ifm-link-color);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 2px;
+      margin-bottom: 1px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--secondary-control-color-60);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
 
 @media screen and (max-width: 966px) {

@@ -7,6 +7,7 @@ import HowItWorks from '../components/HowItWorks';
 import Tokenomics from '../components/Tokenomics';
 import Partners from '../components/Partners';
 import WhatsYellow from '../components/WhatsYellow';
+import FeaturesOfYellow from '../components/FeaturesOfYellow';
 
 export default function Home() {
     useEffect(() => {
@@ -22,6 +23,7 @@ export default function Home() {
                 <Hero />
                 <main>
                     <WhatsYellow />
+                    <FeaturesOfYellow />
                     <XLN />
                     <HowItWorks />
                     <OpenFinance />
