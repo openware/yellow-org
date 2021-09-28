@@ -1,5 +1,5 @@
 @import '../../static/fonts/gilmer-bold/webfonts/gilmer-bold.css';
-@import '../../static/fonts/gilmer-regular/webfonts/gilmer-regular.css';
+@import '../../static/fonts/gilmer-medium/webfonts/gilmer-medium.css';
 @import '../../static/fonts/metro-sans-bold/webfonts/metro-sans-bold.css';
 @import '../../static/fonts/metro-sans-regular/webfonts/metro-sans-regular.css';
 @import '../../static/fonts/metro-sans-semi-bold/webfonts/metro-sans-semi-bold.css';
@@ -20,6 +20,8 @@
   --ifm-heading-font-family: Gilmer-Bold, Geneva, Tahoma, Helvetica, Verdana;
   --ifm-font-family-base: MetroSans-SemiBold, "Open Sans";
   --font-family-link: MetroSans-Regular, "Open Sans";
+
+  --font-family-h8: Gilmer-Medium, Geneva, Tahoma, Helvetica, Verdana;
 
   --font-family-subtitle-400: MetroSans-Regular, "Open Sans";
   --font-family-subtitle-600: MetroSans-SemiBold, "Open Sans";
@@ -97,6 +99,7 @@
     line-height: 2rem;
     font-weight: 600;
     font-size: var(--h8-font-size);
+    font-family: var(--font-family-h8);
   }
 }
 
