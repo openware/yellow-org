@@ -3,9 +3,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
-    
+
     .icon-block {
-      width: 297px;
+      max-width: 297px;
       min-width: min-content;
       display: flex;
       flex-direction: column;

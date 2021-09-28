@@ -67,3 +67,13 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .features {
+    .section-title {
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+}
