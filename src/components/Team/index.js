@@ -46,9 +46,9 @@ export default function Team() {
                     <div className="team__grid-xl">
                         {TEAM_HEADLINERS.map(i => (
                             <div key={i.name} className="grid__item">
-                                <img className="mb-24" src={buildImagePath(i.photo)} />
+                                <img className="mb-24 team__headliner-img" src={buildImagePath(i.photo)} />
                                 <div className="space-between">
-                                    <span className="h7">{i.name}</span>
+                                    <span className="h8">{i.name}</span>
                                     {i.socials.length ? (
                                         <div className="icon__group">
                                             {i.socials.map((s, i) => (
@@ -59,7 +59,7 @@ export default function Team() {
                                         </div>
                                     ) : null}
                                 </div>
-                                <span className="subtitle-2-18-700 yellow mb-12">{i.position}</span>
+                                <span className="body-1-16-700 yellow mb-12">{i.position}</span>
                                 <p className="body-1-16-400 grey">{i.description}</p>
                             </div>
                         ))}

@@ -143,7 +143,7 @@ export const TEAM_HEADLINERS = [
         position: "Executive Chairman",
         description:
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-        photo: "",
+        photo: "Alexis.jpg",
         socials: [
             { img: <Twitter />, link: "https://twitter.com/AlexisYellow" },
         ],
@@ -165,6 +165,14 @@ export const TEAM_HEADLINERS = [
         description:
             "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ",
         photo: "Camille.png",
+        socials: [{ img: <Twitter />, link: "" }],
+    },
+    {
+        name: "Sergii Kashchenko",
+        position: "COO",
+        description:
+            "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+        photo: "Sergii.jpg",
         socials: [{ img: <Twitter />, link: "" }],
     },
 ];
