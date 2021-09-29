@@ -1,43 +1,21 @@
 import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import Instagram from './socials/Instagram';
-import Twitter from './socials/Twitter';
-import MEMBERS from './members';
+import { MEMBERS, TEAM_HEADLINERS } from './members';
 
-const TEAM_HEADLINERS = [
-    {
-        name: 'Alexis Yellow',
-        position: 'Executive Chairman',
-        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-        photo: '',
-        socials: [ { img: <Twitter />, link: 'https://twitter.com/AlexisYellow' } ],
-    },
-    {
-        name: 'Louis Bellet',
-        position: 'CEO',
-        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-        photo: 'Louis.png',
-        socials: [ { img: <Instagram />, link: 'https://instagram.com/crypto.kat' }, { img: <Twitter />, link: '' } ],
-    },
-    {
-        name: 'Camille Meulien',
-        position: 'CTO - Architect',
-        description: 'Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ',
-        photo: 'Camille.png',
-        socials: [ { img: <Twitter />, link: '' } ],
-    }
-];
+const ACTIVE_GRADIENT = 'linear-gradient(0deg, #090909 0%, rgba(9, 9, 9, 0) 100%)';
+
+const buildImagePath = (image) => {
+    return useBaseUrl(`/img/photos/${image || 'anonymous.png'}`);
+}
 
 export default function Team() {
     const [hoverId, setHoverId] = useState(-1);
 
-    const gradient = 'linear-gradient(0deg, #090909 0%, rgba(9, 9, 9, 0) 100%)';
-
     const buildStyle = (id, image) => {
         const isActive = hoverId === id;
         return {
-            backgroundImage: `${isActive ? `${gradient}, ` : ''}url(${useBaseUrl(`/img/photos/${image || 'anonymous.png'}`)})`,
+            backgroundImage: `${isActive ? `${ACTIVE_GRADIENT}, ` : ''}url(${buildImagePath(image)})`,
         }
     };
 
@@ -49,7 +27,7 @@ export default function Team() {
                     <div className="team__grid-xl">
                         {TEAM_HEADLINERS.map(i => (
                             <div key={i.name} className="grid__item">
-                                <img className="mb-24" src={useBaseUrl(`/img/photos/${i.photo || 'anonymous.png'}`)} />
+                                <img className="mb-24" src={buildImagePath(i.photo)} />
                                 <div className="space-between">
                                     <span className="h7">{i.name}</span>
                                     {i.socials.length ? (
