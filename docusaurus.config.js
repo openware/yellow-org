@@ -108,7 +108,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/openware/yellow-org/edit/master/blog/',
+            'https://github.com/openware/yellow-org/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
