@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { MEMBERS, TEAM_HEADLINERS } from './members';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 const ACTIVE_GRADIENT = 'linear-gradient(0deg, #090909 0%, rgba(9, 9, 9, 0) 100%)';
 
@@ -11,6 +12,16 @@ const buildImagePath = (image) => {
 
 export default function Team() {
     const [hoverId, setHoverId] = useState(-1);
+    const [visibleMembers, setVisibleMembers] = useState(MEMBERS);
+
+    const isMobileScreen = useMediaQuery('(max-width: 425px)');
+
+    useEffect(() => {
+        // show only first 15 team members on mobile devices
+        const visibleMembers = isMobileScreen ? MEMBERS.slice(0, 15) : MEMBERS;
+
+        setVisibleMembers(visibleMembers);
+    }, [isMobileScreen])
 
     const buildStyle = (id, image) => {
         const isActive = hoverId === id;
@@ -19,11 +30,19 @@ export default function Team() {
         }
     };
 
+    const isShowingAllMembers = visibleMembers.length === MEMBERS.length;
+
+    const handleShowMoreClick = () => {
+        const updatedVisibleMembers = isShowingAllMembers ? MEMBERS.slice(0, 15) : MEMBERS;
+        setVisibleMembers(updatedVisibleMembers);
+    }
+
     return (
         <div className="section section__dark" id="team">
             <div className="container team">
                 <div className="row section__center">
                     <h4 className="section-title">Team</h4>
+
                     <div className="team__grid-xl">
                         {TEAM_HEADLINERS.map(i => (
                             <div key={i.name} className="grid__item">
@@ -45,8 +64,9 @@ export default function Team() {
                             </div>
                         ))}
                     </div>
+
                     <div className="team__grid-xs">
-                        {MEMBERS.map((i, id) => (
+                        {visibleMembers.map((i, id) => (
                             <Link
                                 key={i.name}
                                 onMouseEnter={() => setHoverId(id)}
@@ -63,6 +83,15 @@ export default function Team() {
                             </Link>
                         ))}
                     </div>
+
+                    {isMobileScreen && (
+                        <div
+                            onClick={handleShowMoreClick}
+                            className="team__show-more-btn button button--outline button--secondary button--shadow-secondary"
+                        >
+                            <span className="button__inner">{isShowingAllMembers ? 'Show less' : 'Show more'}</span>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
