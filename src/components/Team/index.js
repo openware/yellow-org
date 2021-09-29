@@ -32,15 +32,12 @@ const TEAM_HEADLINERS = [
 export default function Team() {
     const [hoverId, setHoverId] = useState(-1);
 
-    const style = (id, image) => {
-        if (hoverId === id) {
-            return {
-                backgroundImage: "linear-gradient(0deg, #090909 0%, rgba(9, 9, 9, 0) 100%), url(" + useBaseUrl(`/img/photos/${image || 'anonymous.png'}`) + ")",
-            }
-        } else {
-            return {
-                backgroundImage: "url(" + useBaseUrl(`/img/photos/${image || 'anonymous.png'}`) + ")",
-            }
+    const gradient = 'linear-gradient(0deg, #090909 0%, rgba(9, 9, 9, 0) 100%)';
+
+    const buildStyle = (id, image) => {
+        const isActive = hoverId === id;
+        return {
+            backgroundImage: `${isActive ? `${gradient}, ` : ''}url(${useBaseUrl(`/img/photos/${image || 'anonymous.png'}`)})`,
         }
     };
 
@@ -76,7 +73,7 @@ export default function Team() {
                                 key={i.name}
                                 onMouseEnter={() => setHoverId(id)}
                                 onMouseLeave={() => setHoverId(-1)}
-                                style={style(id, i.image)}
+                                style={buildStyle(id, i.image)}
                                 to={i.link}
                                 className="grid__item"
                             >
