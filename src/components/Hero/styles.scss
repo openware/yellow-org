@@ -24,14 +24,21 @@
   &-left {
     width: 100%;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 75px;
+    max-width: 625px;
   }
 
   @media screen and (max-width: 996px) {
-    &-img {
-      display: none;
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    &-left {
+      padding-top: 20px;
+    }
+
+    &__banner {
+      padding-top: 15px;
     }
   }
 }

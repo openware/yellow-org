@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Yellow.org',
-  tagline: 'High performance spot trading exchange.',
+  tagline: 'Dive into DeFi with Yellow',
   url: 'https://www.yellow.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -57,16 +57,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/yellow',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/yellow',
-            },
-            {
               label: 'Twitter',
               href: 'https://twitter.com/yellow_defi',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/yellow_org',
+            },
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/yellow',
             },
           ],
         },

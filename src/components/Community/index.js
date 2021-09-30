@@ -11,18 +11,18 @@ export default function Community() {
 
                     <div className="community__socials">
                         <div className="community__socials-item">
-                            <img src={useBaseUrl("/img/icons/twitter.svg")} />
+                            <img src={useBaseUrl("/img/icons/twitter-black.svg")} />
 
                             <Link
                                 className="button button--outline button--secondary button--shadow-secondary"
                                 to="https://twitter.com/yellow_defi"
                             >
-                                <span className="button__inner">Follow us</span>
+                                <span className="button__inner">Follow</span>
                             </Link>
                         </div>
 
                         <div className="community__socials-item">
-                            <img src={useBaseUrl("/img/icons/telegram.svg")} />
+                            <img src={useBaseUrl("/img/icons/telegram-black.svg")} />
 
                             <Link
                                 className="button button--outline button--secondary button--shadow-secondary"

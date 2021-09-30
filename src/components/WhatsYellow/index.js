@@ -8,15 +8,15 @@ const blocks = [
     },
     {
         src: '/img/icons/overview-2.svg',
-        text: 'A Layer-3 non-custodial exchange offering more transparency and security to the end users.',
+        text: 'A Layer-3 non-custodial exchange offering more transparency and security to the end-users.',
     },
     {
         src: '/img/icons/overview-3.svg',
-        text: 'Yellow platform gives its users access to High Speed Trading due to the advantages of using the Finex engine on each market.',
+        text: 'Yellow platform gives its users access to High-Speed Trading due to the advantages of using the Finex engine on each market.',
     },
     {
         src: '/img/icons/overview-4.svg',
-        text: 'Our exchange will provide access to diverse assets. To do that we plan to use wrapped tokens managing them with state channel smart contracts.',
+        text: 'Our exchange will provide access to diverse assets. To do that we plan to use wrapped tokens managing them with state channels smart contracts.',
     },
     {
         src: '/img/icons/overview-5.svg',
