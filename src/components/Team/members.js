@@ -119,7 +119,7 @@ export const MEMBERS = [
     },
     {
         name: "Yevhen Treiher",
-        position: "Designer",
+        position: "UX Designer",
         link: "https://www.linkedin.com/in/yevhen-treiher-9b0225137/",
         image: "20.jpg",
     },
