@@ -11,7 +11,7 @@ export default function Community() {
 
                     <div className="community__socials">
                         <div className="community__socials-item">
-                            <img src={useBaseUrl("/img/icons/twitter.svg")} />
+                            <img src={useBaseUrl("/img/icons/twitter-black.svg")} />
 
                             <Link
                                 className="button button--outline button--secondary button--shadow-secondary"
@@ -22,7 +22,7 @@ export default function Community() {
                         </div>
 
                         <div className="community__socials-item">
-                            <img src={useBaseUrl("/img/icons/telegram.svg")} />
+                            <img src={useBaseUrl("/img/icons/telegram-black.svg")} />
 
                             <Link
                                 className="button button--outline button--secondary button--shadow-secondary"
