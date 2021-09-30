@@ -30,6 +30,7 @@ export default function XLN() {
             <div className="container xln">
                 <div className="row">
                     <div className="col col--6">
+                        <img src={useBaseUrl('/img/components/xln.png')} />
                     </div>
                     <div className="col col--6">
                         <span className="highlight">Features</span>
