@@ -12,7 +12,7 @@ const blocks = [
     },
     {
         src: '/img/icons/overview-3.svg',
-        text: 'Yellow plaform gives it’s users an access to High Speed Trading due to the advantages of using Finex engine on each market. ',
+        text: 'Yellow platform gives its users access to High Speed Trading due to the advantages of using the Finex engine on each market.',
     },
     {
         src: '/img/icons/overview-4.svg',
@@ -20,7 +20,7 @@ const blocks = [
     },
     {
         src: '/img/icons/overview-5.svg',
-        text: 'Yellow is also offering compliance to most regulations using 3rd party KYC providers and Custodians without sharing the sensitive data.',
+        text: 'Yellow is also offering compliance to most regulations using 3rd party KYC providers and Custodians without sharing sensitive data.',
     },
     {
         src: '/img/icons/overview-6.svg',
@@ -48,7 +48,6 @@ export default function WhatsYellow() {
                             );
                         })}
                     </div>
-                    <img className="section__center-img" src={useBaseUrl('/img/evolution.png')} />
                 </div>
             </div>
         </div>

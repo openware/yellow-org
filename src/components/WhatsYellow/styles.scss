@@ -6,10 +6,6 @@
 
   .section__center {
     max-width: inherit;
-
-    &-img {
-      max-width: 829px;
-    }
   }
 
   .section-title {
@@ -26,7 +22,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 48px;
     grid-row-gap: 100px;
-    margin-bottom: 48px;
 
     .icon-block {
       display: flex;
@@ -66,9 +61,13 @@
         margin-bottom: 12px;
       }
     }
+  }
+}
 
-    .section__center-img {
-      max-width: 100%;
+@media screen and (max-width: 375px) {
+  .overview {
+    .blocks {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
