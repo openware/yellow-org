@@ -4,6 +4,10 @@
   padding-top: 36px;
   padding-bottom: 18px;
 
+  &__logo {
+    width: 137px;
+  }
+
   &__title {
     @extend .subtitle-2-18-700;
   }
