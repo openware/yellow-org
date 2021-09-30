@@ -29,7 +29,7 @@ export default function HowItWorks() {
                     </div>
 
                     <div className="col col--6">
-                        <img className="how-it-works__img-desktop" src={useBaseUrl('/img/components/how_it_works_desktop.png')} />
+                        <img className="how-it-works__img-desktop" src={useBaseUrl('/img/components/how_it_works.png')} />
                         <img className="how-it-works__img-mobile" src={useBaseUrl('/img/components/how_it_works_mobile.png')} />
                     </div>
                 </div>

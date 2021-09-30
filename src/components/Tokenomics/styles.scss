@@ -6,9 +6,13 @@
     margin-bottom: 24px;
   }
 
-  &__pie-chart {
+  &__img-desktop {
     position: relative;
     bottom: 47px;
+  }
+
+  &__img-mobile {
+    display: none;
   }
 
   &__utilities-list {
@@ -20,17 +24,25 @@
   }
 
   @media screen and (max-width: 1440px) {
-    &__pie-chart {
+    &__img-desktop {
       bottom: -55px;
     }
   }
 
   @media screen and (max-width: 996px) {
     padding-top: 0;
-    padding-bottom: 0;
+  }
 
-    &__pie-chart {
+  @media screen and (max-width: 425px) {
+    padding-bottom: 0 !important;
+
+    &__img-desktop {
       display: none;
+    }
+
+    &__img-mobile {
+      display: block;
+      margin-top: 40px;
     }
   }
 }

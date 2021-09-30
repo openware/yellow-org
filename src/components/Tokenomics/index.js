@@ -49,8 +49,12 @@ export default function Tokenomics() {
 
                     <div className="col col--6">
                         <img
-                            className="tokenomics__pie-chart"
+                            className="tokenomics__img-desktop"
                             src={useBaseUrl("/img/components/tokenomics_pie_chart.png")}
+                        />
+                        <img
+                            className="tokenomics__img-mobile"
+                            src={useBaseUrl("/img/components/tokenomics_pie_chart_mobile.png")}
                         />
                     </div>
                 </div>
