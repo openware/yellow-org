@@ -77,7 +77,7 @@ function Footer() {
             <div className="container">
                 {links && links.length > 0 && (
                     <div className="row footer__links">
-                        <div className="col footer__col">
+                        <div className="col col--4 footer__col footer__overview">
                             {logo && (logo.src || logo.srcDark) && (
                                 <div>
                                     {logo.href ? (

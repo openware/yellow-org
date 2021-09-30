@@ -57,16 +57,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/yellow',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/yellow',
-            },
-            {
               label: 'Twitter',
               href: 'https://twitter.com/yellow_defi',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/yellow_org',
+            },
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/yellow',
             },
           ],
         },

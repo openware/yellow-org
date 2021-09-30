@@ -10,10 +10,16 @@
 
   &__title {
     @extend .subtitle-2-18-700;
+    color: var(--primary-cta-color-90);
   }
 
   &__link-item {
     color: var(--text-color-00);
     @extend .body-1-16-400;
+  }
+
+  &__overview {
+    max-width: 440px !important;
+    padding-right: 45px !important;
   }
 }
