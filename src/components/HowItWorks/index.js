@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 
 export default function HowItWorks() {
     return (
-        <div className="section how-it-works">
+        <div className="section section__grey how-it-works">
             <div className="container">
                 <div className="row">
                     <div className="col col--6">
@@ -13,7 +13,7 @@ export default function HowItWorks() {
                         <p className="section-text--smaller subtitle-2-18-700">
                             Our exchange is built on the Layer 3 scaling solution that utilizes state channels. That makes it possible to use high-performance centralized matching with trustless funds management. General process lifecycle:
                         </p>
-                        <ul className="section-text subtitle-2-18-700 how-it-works-list">
+                        <ul className="section-text subtitle-2-18-700 how-it-works__list">
                             <li>Create account</li>
                             <li>Open channel and Deposit</li>
                             <li>Trade and Transfer</li>
@@ -28,8 +28,9 @@ export default function HowItWorks() {
                         </Link>
                     </div>
 
-                    <div className="col col--6 how-it-works-img">
-                        <img src={useBaseUrl('/img/how-it-works.png')} />
+                    <div className="col col--6">
+                        <img className="how-it-works__img-desktop" src={useBaseUrl('/img/components/how_it_works_desktop.png')} />
+                        <img className="how-it-works__img-mobile" src={useBaseUrl('/img/components/how_it_works_mobile.png')} />
                     </div>
                 </div>
             </div>
