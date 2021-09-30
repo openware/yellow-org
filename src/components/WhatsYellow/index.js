@@ -8,7 +8,7 @@ const blocks = [
     },
     {
         src: '/img/icons/overview-2.svg',
-        text: 'A Layer-3 non-custodial exchange offering more transparency and security to the end users.',
+        text: 'A Layer-3 non-custodial exchange offering more transparency and security to the end-users.',
     },
     {
         src: '/img/icons/overview-3.svg',

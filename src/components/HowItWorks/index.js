@@ -11,7 +11,7 @@ export default function HowItWorks() {
                         <span className="highlight">Architecture</span>
                         <h4 className="section-title">How it works?</h4>
                         <p className="section-text--smaller subtitle-2-18-700">
-                            Our exchange is built on the Layer 3 scaling solution that utilizes state channels. That makes possible to use high-performance centralized matching with trustless funds management. General process lifecycle:
+                            Our exchange is built on the Layer 3 scaling solution that utilizes state channels. That makes it possible to use high-performance centralized matching with trustless funds management. General process lifecycle:
                         </p>
                         <ul className="section-text subtitle-2-18-700 how-it-works-list">
                             <li>Create account</li>
@@ -20,11 +20,10 @@ export default function HowItWorks() {
                             <li>Close channel and Withdraw</li>
                         </ul>
                         <Link
-                            className="button button--outline button--secondary"
-                            to="https://t.me/yellow_org">
+                            className="button button--outline button--secondary button--wide"
+                            to="/docs/concepts/architecture">
                             <span className="button__inner">
-                                <img src={useBaseUrl('/img/icons/telegram.svg')} className="how-it-works-telegram-icon" />
-                                Join our Telegram
+                                Learn More
                             </span>
                         </Link>
                     </div>

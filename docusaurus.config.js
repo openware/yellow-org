@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Yellow.org',
-  tagline: 'High performance spot trading exchange.',
+  tagline: 'Dive into DeFi with Yellow',
   url: 'https://www.yellow.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',

@@ -17,7 +17,7 @@ export default function Community() {
                                 className="button button--outline button--secondary button--shadow-secondary"
                                 to="https://twitter.com/yellow_defi"
                             >
-                                <span className="button__inner">Follow us</span>
+                                <span className="button__inner">Follow</span>
                             </Link>
                         </div>
 
