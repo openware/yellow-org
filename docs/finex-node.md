@@ -35,7 +35,8 @@ During initial setup, the keeper can select and configure the mode of the Finex 
 
 ### 3. Collateral guarantee
 
-For the keeper to be able to work with payments and match orders, they need to put funds in the collateral contract. (The size of collateral is TBD).
+For the keeper to be able to work with payments and match orders, they need to put funds in the collateral contract.
+<!--- FIXME: (The size of collateral is TBD). --->
 
 We need a few types of state channels:
 
@@ -47,6 +48,6 @@ We need a few types of state channels:
 
 **Optional**
 
-- The keeper can stake YEL token for benefits (TBD)
+<!--- FIXME: The keeper can stake YEL token for benefits (TBD). --->
 - KYC verification. The keeper can pass KYC verification to be more trusted in the network. As a result of successful KYC verification, the keeper receives the NFT token that represents their verification. NFT token doesn’t expose sensitive data about the keeper.
     
