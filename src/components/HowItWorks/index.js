@@ -21,7 +21,7 @@ export default function HowItWorks() {
                         </ul>
                         <Link
                             className="button button--outline button--secondary button--wide"
-                            to="/docs/concepts/architecture">
+                            to="/docs/architecture">
                             <span className="button__inner">
                                 Learn More
                             </span>

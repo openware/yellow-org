@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # What is Custody.org?
@@ -16,11 +16,13 @@ Yes! Connecting via verified crypto gateway like MetaMask the user's deposit goe
 
 ## More details
 
-We are using cross-chain bridges for Wrapped tokens, and since pay-channel smart contracts are operating with trade-channel smart contracts on the 2nd layer - this way the user has an access to numerous of actual 'market pairs' state channels. List of the supported crypto bridges (WBTC-BTC, WDOT-DOT etc) you can find here (link is expected). Conversion of the asset to the Wrapped version and vise versa is automatized while the liquidity of the assets is provided by our partners.
+We are using cross-chain bridges for Wrapped tokens, and since pay-channel smart contracts are operating with trade-channel smart contracts on the 2nd layer - this way the user has an access to numerous of actual 'market pairs' state channels. List of the supported crypto bridges (WBTC-BTC, WDOT-DOT etc). Conversion of the asset to the Wrapped version and vise versa is automatized while the liquidity of the assets is provided by our partners.
+<!--- FIXME: you can find here (link is expected). --->
 
 For KYC purposes the wallet address is associated to a 3rd party wallet. It is important to notice that the KYC level information in this iteration doesn't disclose the sensitive data like Country identity, the related metadata stays as a confidential information. Considering the usage of web3 protocol we provide ERC-tokens for attaching the KYC to the wallet. As soon as KYC-only part is passed - the user receives his specific token and is able to send it to another user.
 
-As soon as the pay of fee is confirmed the integrated partner will sign the certificate and it will be moved to 'ACCEPTED' state (we explain how to create certificate/Could be attachable as NFT - Link here).
+As soon as the pay of fee is confirmed the integrated partner will sign the certificate and it will be moved to 'ACCEPTED' state.
+<!--- FIXME: (we explain how to create certificate/Could be attachable as NFT - Link here). --->
 
 Custody.org carries an idea of having CUS - incentive token for Custodian and KYC Provider.
 
