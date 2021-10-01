@@ -6,7 +6,7 @@ const blocks = [
     {
         src: '/img/icons/features-1.png',
         title: 'Non-Custodial',
-        text: 'Transferring your assets to the Exchange is replaced with a Metamask connection. Your funds are secured using a multi-signature smart contract on the blockchain. You can fully audit the assets held by the exchange.',
+        text: 'Instead of transferring your assets to the Exchange, like old-school CEX, you enable a Metamask connection. Your funds are secured using a multi-signature smart contract on the blockchain. You can fully audit the assets held by the exchange anytime.',
         link: '/docs/smart-contracts',
         linkText: 'Explore State channels',
     },

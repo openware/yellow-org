@@ -37,6 +37,14 @@ export default function Team() {
         setVisibleMembers(updatedVisibleMembers);
     }
 
+    const buildSocialIconsGroup = (socials) => (
+        <div className="icon__group">
+            {socials.map((s) => (
+                <Link key={s.link} to={s.link}>{s.img}</Link>
+            ))}
+        </div>
+    );
+
     return (
         <div className="section section__dark" id="team">
             <div className="container team">
@@ -49,18 +57,10 @@ export default function Team() {
                                 <img className="mb-24 team__headliner-img" src={buildImagePath(i.photo)} />
                                 <div className="space-between">
                                     <span className="h8">{i.name}</span>
-                                    {i.socials.length ? (
-                                        <div className="icon__group">
-                                            {i.socials.map((s, i) => (
-                                                <Link key={i.toString()} to={s.link}>
-                                                    {s.img}
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    ) : null}
+                                    {i.socials.length && buildSocialIconsGroup(i.socials)}
                                 </div>
                                 <span className="body-1-16-700 yellow mb-12">{i.position}</span>
-                                <p className="body-1-16-400 grey">{i.description}</p>
+                                <p className="body-1-16-400 grey team__headliner-description">{i.description}</p>
                             </div>
                         ))}
                     </div>

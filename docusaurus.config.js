@@ -41,7 +41,7 @@ module.exports = {
           items: [
             {
               label: 'Vision',
-              to: '/docs/what-is-xln',
+              to: '/docs/vision',
             },
             {
               label: 'Architecture',

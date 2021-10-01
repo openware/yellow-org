@@ -30,14 +30,14 @@ export default function XLN() {
             <div className="container xln">
                 <div className="row">
                     <div className="col col--6">
-                        <img src={useBaseUrl('/img/components/xln.png')} />
+                        <img className="section__main-img" src={useBaseUrl('/img/components/xln.png')} />
                     </div>
                     <div className="col col--6">
                         <span className="highlight">Features</span>
                         <h4 className="section-title">What is XLN?</h4>
                         <p className="section-text--smaller subtitle-2-18-600">
-                            XLN is a network of Finex nodes that use a unified communication protocol. The main target of the
-                            network is to interconnect different blockchains unlocking access to liquidity with the layer of
+                            XLN is a network of Finex nodes that talk using a unified communication protocol. The main target of
+                            the network is to interconnect different blockchains unlocking access to liquidity with the layer of
                             decentralized exchanges.
                         </p>
                         <div className="blocks">

@@ -20,6 +20,14 @@
     display: none;
   }
 
+  @media screen and (max-width: 996px) {
+    padding: var(--landing-block-padding) 0 !important;
+
+    &__img-desktop {
+      top: 20px;
+    }
+  }
+
   @media screen and (max-width: 425px) {
     padding-bottom: 72px !important;
 

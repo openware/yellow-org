@@ -1,6 +1,7 @@
 import React from 'react';
-import Instagram from './socials/Instagram';
-import Twitter from './socials/Twitter';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+const LinkedinIcon = () => <img src={useBaseUrl('/img/icons/linkedin-rounded-grey.svg')} />;
 
 export const MEMBERS = [
     {
@@ -139,40 +140,39 @@ export const MEMBERS = [
 
 export const TEAM_HEADLINERS = [
     {
-        name: "Alexis Yellow",
+        name: "Alexis Sirkia",
         position: "Executive Chairman",
         description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "Alexis is a strategist, innovator, engineer, and brilliant mentor with extensive result-driven project handling experience - from launching rockets to kickstarting flourishing business venues.",
         photo: "Alexis.jpg",
         socials: [
-            { img: <Twitter />, link: "https://twitter.com/AlexisYellow" },
+            { img: <LinkedinIcon />, link: "https://www.linkedin.com/in/sirkia/" },
         ],
     },
     {
         name: "Louis Bellet",
         position: "CEO",
         description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "Louis is a genius system architect, avid entrepreneur, and experienced leader of IT projects from startup to enterprise-grade, implementing strategies and workflows that streamline business objectives.",
         photo: "Louis.png",
         socials: [
-            { img: <Instagram />, link: "https://instagram.com/crypto.kat" },
-            { img: <Twitter />, link: "" },
+            { img: <LinkedinIcon />, link: "https://www.linkedin.com/in/louisbellet/" },
         ],
     },
     {
         name: "Camille Meulien",
         position: "CTO - Architect",
         description:
-            "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ",
+            "Camille is a master of Agile and Lean software development, High-Traffic and Big Data engineering guru, focused on aligning efficient technical solutions with business goals.",
         photo: "Camille.png",
-        socials: [{ img: <Twitter />, link: "" }],
+        socials: [{ img: <LinkedinIcon />, link: "https://www.linkedin.com/in/camillemeulien/" }],
     },
     {
         name: "Sergii Kashchenko",
         position: "COO",
         description:
-            "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
+            "Sergii is a technology adept and inspiring leader, delivering excellence in business workflows by highlighting and empowering talent to create a strong team culture.",
         photo: "Sergii.jpg",
-        socials: [{ img: <Twitter />, link: "" }],
+        socials: [{ img: <LinkedinIcon />, link: "https://www.linkedin.com/in/kashchenko/" }],
     },
 ];
