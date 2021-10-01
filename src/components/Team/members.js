@@ -1,6 +1,7 @@
 import React from 'react';
-import Instagram from './socials/Instagram';
-import Twitter from './socials/Twitter';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+const LinkedinIcon = () => <img src={useBaseUrl('/img/icons/linkedin-rounded-grey.svg')} />;
 
 export const MEMBERS = [
     {
@@ -145,7 +146,7 @@ export const TEAM_HEADLINERS = [
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
         photo: "Alexis.jpg",
         socials: [
-            { img: <Twitter />, link: "https://twitter.com/AlexisYellow" },
+            { img: <LinkedinIcon />, link: "https://www.linkedin.com/in/sirkia/" },
         ],
     },
     {
@@ -155,8 +156,7 @@ export const TEAM_HEADLINERS = [
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
         photo: "Louis.png",
         socials: [
-            { img: <Instagram />, link: "https://instagram.com/crypto.kat" },
-            { img: <Twitter />, link: "" },
+            { img: <LinkedinIcon />, link: "https://www.linkedin.com/in/louisbellet/" },
         ],
     },
     {
@@ -165,7 +165,7 @@ export const TEAM_HEADLINERS = [
         description:
             "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ",
         photo: "Camille.png",
-        socials: [{ img: <Twitter />, link: "" }],
+        socials: [{ img: <LinkedinIcon />, link: "https://www.linkedin.com/in/camillemeulien/" }],
     },
     {
         name: "Sergii Kashchenko",
@@ -173,6 +173,6 @@ export const TEAM_HEADLINERS = [
         description:
             "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.",
         photo: "Sergii.jpg",
-        socials: [{ img: <Twitter />, link: "" }],
+        socials: [{ img: <LinkedinIcon />, link: "https://www.linkedin.com/in/kashchenko/" }],
     },
 ];
