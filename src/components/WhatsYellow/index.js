@@ -4,27 +4,27 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const blocks = [
     {
         src: '/img/icons/overview-1.svg',
-        text: 'A multi-asset spot trading exchange using OpenDAX, built using Open-Finance Protocol.',
+        text: 'Multi-asset spot trading exchange built with OpenDAX stack, based on Open-Finance Protocol.',
     },
     {
         src: '/img/icons/overview-2.svg',
-        text: 'A Layer-3 non-custodial exchange offering more transparency and security to the end-users.',
+        text: 'A Layer-3 non-custodial exchange offering unparalleled security and transparency for the traders.',
     },
     {
         src: '/img/icons/overview-3.svg',
-        text: 'Yellow platform gives its users access to High-Speed Trading due to the advantages of using the Finex engine on each market.',
+        text: 'Access to Ultra-High-Speed Trading due to the advantages of having Finex nodes on each market.',
     },
     {
         src: '/img/icons/overview-4.svg',
-        text: 'Our exchange will provide access to diverse assets. To do that we plan to use wrapped tokens managing them with state channels smart contracts.',
+        text: 'Wrapped tokens managed with state channel smart contracts to provide access to diverse assets.',
     },
     {
         src: '/img/icons/overview-5.svg',
-        text: 'Yellow is also offering compliance to most regulations using 3rd party KYC providers and Custodians without sharing sensitive data.',
+        text: 'Compliance with international regulations using 3rd party KYC Providers and Custodians without sharing sensitive data.',
     },
     {
         src: '/img/icons/overview-6.svg',
-        text: 'You can create simply various markets and trade on them on Yellow.',
+        text: 'Explore, create and host various markets to trade on Yellow.',
     },
 ];
 

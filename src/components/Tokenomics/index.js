@@ -18,9 +18,10 @@ export default function Tokenomics() {
                             <p>
                                 Yellow (YEL) is a native token of the Yellow.org
                                 hybrid exchange. It uses a non-custodial
-                                solution from OpenDAX v4. Yellow token has the
-                                following utilities:
+                                solution based on OpenDAX v4 stack.
                             </p>
+
+                            <p>Yellow token has the following utilities:</p>
 
                             <ul className="tokenomics__utilities-list">
                                 <li>Trading fee discount</li>
@@ -28,11 +29,6 @@ export default function Tokenomics() {
                                 <li>Development governance</li>
                                 <li>Participation in WASM slots auctions</li>
                             </ul>
-
-                            <p>
-                                Token will be pre-minted and distributed based
-                                on the information presented on the pie chart.
-                            </p>
 
                             <div>
                                 <Link

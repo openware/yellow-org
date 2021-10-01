@@ -60,7 +60,7 @@ export default function Team() {
                                     {i.socials.length && buildSocialIconsGroup(i.socials)}
                                 </div>
                                 <span className="body-1-16-700 yellow mb-12">{i.position}</span>
-                                <p className="body-1-16-400 grey">{i.description}</p>
+                                <p className="body-1-16-400 grey team__headliner-description">{i.description}</p>
                             </div>
                         ))}
                     </div>

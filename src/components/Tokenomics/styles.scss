@@ -1,9 +1,8 @@
 .tokenomics {
   padding-top: 25px;
-  padding-bottom: 58px;
 
   h4 {
-    margin-bottom: 24px;
+    margin-bottom: 34px;
   }
 
   &__img-desktop {
@@ -34,8 +33,6 @@
   }
 
   @media screen and (max-width: 425px) {
-    padding-bottom: 0 !important;
-
     &__img-desktop {
       display: none;
     }

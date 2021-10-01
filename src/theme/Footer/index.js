@@ -90,7 +90,7 @@ function Footer() {
                                 </div>
                             )}
                             <p className={clsx('body-2-14-400 margin-bottom--md', styles.footerText)}>
-                                Yellow.org is a hybrid exchange that combines the benefits of centralized and decentralized worlds. Come and join the future of the financial system!
+                                Yellow is a hybrid Layer-3 digital exchange system based on technology that combines the best of centralized and decentralized worlds. Let’s build the future of finance together!
                             </p>
                             <div className={styles.footerSocials}>
                                 <Link to="https://www.reddit.com/r/yellow_defi/"><img src={useBaseUrl('/img/icons/reddit.svg')} loading="lazy" /></Link>

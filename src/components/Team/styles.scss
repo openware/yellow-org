@@ -7,6 +7,10 @@
     border-radius: 8px;
   }
 
+  &__headliner-description {
+    margin-top: 8px;
+  }
+
   &__grid-xl {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
