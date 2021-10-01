@@ -19,7 +19,7 @@
       margin-bottom: 48px;
 
       .grid__item {
-        img {
+        & > img {
           width: 408px;
           height: auto;
           margin-left: auto;
