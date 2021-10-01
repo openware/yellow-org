@@ -24,7 +24,7 @@ export default function Roadmap() {
                     </div>
 
                     <div className="col col--6">
-                        <img src={useBaseUrl('/img/components/roadmap.svg')} className="roadmap__img-desktop" />
+                        <img src={useBaseUrl('/img/components/roadmap.svg')} className="roadmap__img-desktop section__main-img" />
                         <img src={useBaseUrl('/img/components/roadmap_mobile.svg')} className="roadmap__img-mobile" />
                     </div>
                 </div>

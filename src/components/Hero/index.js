@@ -34,7 +34,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="col col--5 hero-img">
-                        <img src={useBaseUrl('/img/hero.png')} />
+                        <img className="section__main-img" src={useBaseUrl('/img/hero.png')} />
                     </div>
                 </div>
             </div>

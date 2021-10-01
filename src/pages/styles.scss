@@ -98,3 +98,11 @@
     }
   }
 }
+
+@media screen and (min-width: 426px) and (max-width: 996px) {
+  .section {
+    &__main-img {
+      max-width: 65%;
+    }
+  }
+}
