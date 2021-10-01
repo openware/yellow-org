@@ -271,7 +271,7 @@ function Navbar() {
                     ))}
                     <Link
                         className="button button--secondary margin-right--md"
-                        to="/docs/concepts/architecture">
+                        to="/docs/architecture">
                         <span className="button__inner">Litepaper</span>
                     </Link>
                     {!colorModeToggle.disabled &&

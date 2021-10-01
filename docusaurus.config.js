@@ -41,15 +41,15 @@ module.exports = {
           items: [
             {
               label: 'Vision',
-              to: '/docs/overview/what-is-xln',
+              to: '/docs/what-is-xln',
             },
             {
               label: 'Architecture',
-              to: '/docs/concepts/architecture',
+              to: '/docs/architecture',
             },
             {
               label: 'Tokenomics',
-              to: '/docs/token-economics/overview',
+              to: '/docs/tokenomics',
             },
           ],
         },

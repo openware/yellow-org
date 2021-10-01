@@ -19,7 +19,7 @@ export default function Hero() {
                             <div className="hero__buttons">
                                 <Link
                                     className="button button--secondary margin-right--md"
-                                    to="/docs/concepts/architecture">
+                                    to="/docs/architecture">
                                     <span className="button__inner">Docs</span>
                                 </Link>
                                 <Link

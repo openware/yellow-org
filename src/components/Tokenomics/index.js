@@ -37,7 +37,7 @@ export default function Tokenomics() {
                             <div>
                                 <Link
                                     className="button button--outline button--secondary button--shadow-secondary button--wide"
-                                    to="/docs/token-economics/overview"
+                                    to="/docs/tokenomics"
                                 >
                                     <span className="button__inner">
                                         Learn more
