@@ -5,13 +5,9 @@
     margin-bottom: 34px;
   }
 
-  &__img-desktop {
+  .section__main-img {
     position: relative;
     bottom: 47px;
-  }
-
-  &__img-mobile {
-    display: none;
   }
 
   &__utilities-list {
@@ -23,7 +19,7 @@
   }
 
   @media screen and (max-width: 1440px) {
-    &__img-desktop {
+    .section__main-img {
       bottom: -55px;
     }
   }
@@ -33,12 +29,7 @@
   }
 
   @media screen and (max-width: 425px) {
-    &__img-desktop {
-      display: none;
-    }
-
-    &__img-mobile {
-      display: block;
+    .section__main-img {
       margin-top: 40px;
     }
   }

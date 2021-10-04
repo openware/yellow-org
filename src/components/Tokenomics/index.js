@@ -44,14 +44,11 @@ export default function Tokenomics() {
                     </div>
 
                     <div className="col col--6">
-                        <img
-                            className="tokenomics__img-desktop section__main-img"
-                            src={useBaseUrl("/img/components/tokenomics_pie_chart.png")}
-                        />
-                        <img
-                            className="tokenomics__img-mobile"
-                            src={useBaseUrl("/img/components/tokenomics_pie_chart_mobile.png")}
-                        />
+                        <picture>
+                            <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
+                            <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart_mobile.png')} />
+                            <img className="section__main-img" src={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
+                        </picture>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,11 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="col col--5 hero-img">
+                    <picture>
+                        <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/hero.png')} />
+                        <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/hero_mobile.png')} />
                         <img className="section__main-img" src={useBaseUrl('/img/hero.png')} />
+                    </picture>
                     </div>
                 </div>
             </div>

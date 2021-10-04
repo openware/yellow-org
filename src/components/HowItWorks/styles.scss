@@ -8,15 +8,9 @@
     margin-top: -18px;
   }
 
-  &__img-desktop {
-    width: 100%;
+  .section__main-img {
     position: relative;
     bottom: 55px;
-  }
-
-  &__img-mobile {
-    display: none;
-    margin-top: 70px;
   }
 
   @media screen and (max-width: 996px) {
@@ -24,19 +18,15 @@
       padding: var(--landing-block-padding) 0;
     }
 
-    &__img-desktop {
+    .section__main-img {
       bottom: 0;
       top: 40px;
     }
   }
 
   @media screen and (max-width: 425px) {
-    &__img-desktop {
-      display: none;
-    }
-
-    &__img-mobile {
-      display: block;
+    .section__main-img {
+      margin-top: 70px;
     }
   }
 }
