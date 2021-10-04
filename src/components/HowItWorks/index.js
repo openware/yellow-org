@@ -36,8 +36,11 @@ export default function HowItWorks() {
                     </div>
 
                     <div className="col col--6">
-                        <img className="how-it-works__img-desktop section__main-img" src={useBaseUrl('/img/components/how_it_works.png')} />
-                        <img className="how-it-works__img-mobile" src={useBaseUrl('/img/components/how_it_works_mobile.png')} />
+                        <picture>
+                            <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/how_it_works.png')} />
+                            <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/how_it_works_mobile.png')} />
+                            <img className="section__main-img" src={useBaseUrl('/img/components/how_it_works.png')} />
+                        </picture>
                     </div>
                 </div>
             </div>

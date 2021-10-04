@@ -10,19 +10,15 @@
     transform: translate(-50%, -50%);
   }
 
-  &__img-desktop {
+  .section__main-img {
     position: relative;
     top: 100px;
-  }
-
-  &__img-mobile {
-    display: none;
   }
 
   @media screen and (max-width: 996px) {
     padding: var(--landing-block-padding) 0 !important;
 
-    &__img-desktop {
+    .section__main-img {
       top: 20px;
     }
   }
@@ -30,12 +26,7 @@
   @media screen and (max-width: 425px) {
     padding-bottom: 72px !important;
 
-    &__img-desktop {
-      display: none;
-    }
-
-    &__img-mobile {
-      display: block;
+    .section__main-img {
       margin-top: 40px;
     }
   }

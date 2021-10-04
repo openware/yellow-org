@@ -21,10 +21,6 @@
     justify-content: flex-start;
   }
 
-  &__img-mobile {
-    display: none;
-  }
-
   &-left {
     width: 100%;
     position: relative;
@@ -43,17 +39,6 @@
 
     &__banner {
       padding-top: 15px;
-    }
-  }
-
-  @media screen and (max-width: 425px) {
-    &__img-desktop {
-      display: none;
-    }
-
-    &__img-mobile {
-      display: block;
-      margin: 0 auto;
     }
   }
 }

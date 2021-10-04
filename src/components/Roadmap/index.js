@@ -23,8 +23,11 @@ export default function Roadmap() {
                     </div>
 
                     <div className="col col--6">
-                        <img src={useBaseUrl('/img/components/roadmap.png')} className="roadmap__img-desktop section__main-img" />
-                        <img src={useBaseUrl('/img/components/roadmap_mobile.svg')} className="roadmap__img-mobile" />
+                        <picture>
+                            <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/roadmap.png')} />
+                            <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/roadmap_mobile.svg')} />
+                            <img className="section__main-img" src={useBaseUrl('/img/components/roadmap.png')} />
+                        </picture>
                     </div>
                 </div>
             </div>
