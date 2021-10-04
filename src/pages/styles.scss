@@ -86,6 +86,13 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .section__main-img {
+    width: initial !important;
+    max-width: initial;
+  }
+}
+
 @media screen and (max-width: 966px) {
   .section {
     &__center {
@@ -100,9 +107,8 @@
 }
 
 @media screen and (min-width: 426px) and (max-width: 996px) {
-  .section {
-    &__main-img {
-      width: 600px;
-    }
+  .section__main-img {
+    width: initial !important;
+    max-width: 100%;
   }
 }
