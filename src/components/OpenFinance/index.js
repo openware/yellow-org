@@ -4,7 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function OpenFinance() {
     return (
-        <div className="section section__yellow">
+        <div className="section section__yellow open-finance">
             <div className="container">
                 <div className="row section__center">
                     <h4 className="section-title">Open Finance Ecosystem</h4>

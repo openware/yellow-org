@@ -1,0 +1,7 @@
+.open-finance {
+  @media screen and (max-width: 425px) {
+    .section__center > * {
+      text-align: left;
+    }
+  }
+}
