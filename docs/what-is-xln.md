@@ -11,7 +11,7 @@ XLN aggregates liquidity and price feed from a huge number of sources and shares
 The next generation of XLN will spread this principle to decentralized platforms and shift the market to the next level.
 
 ## XLN is a layer 2 network
-Blockchains validate transactions on so-called layer-1. The higher a load of transactions on the blockchain, the more expensive they are.
+Blockchains validate transactions on so-called layer-1. The higher the load of transactions on the blockchain, the more expensive they are.
 
 Layer-2 scaling solutions allow performing transactions faster and chipper. State channels layer-2 solution does not require node validation for every transaction. A state channel comprises a set of open-source protocols, smart contracts, interfaces, and software that enable blockchain applications to run "off-chain" on state channel networks. The layer-1 blockchain validates only the final state after multiple transactions. 
 
