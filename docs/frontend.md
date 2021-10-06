@@ -4,17 +4,17 @@ sidebar_position: 6
 
 # Frontend
 
-Frontend - is a boilerplate client with a set of libraries that can be used for customization.
+Frontend is a boilerplate client with a set of libraries that can be used for customization.
 
 ![Frontend](/img/components/frontend.png)
 
 ## Account
 
-Users can create or restore accounts using a seed phrase. A seed phrase [[1]](https://en.wikipedia.org/wiki/Cryptocurrency_wallet#Seed_phrases) is a set of random words used to generate private and public keys for a specific blockchain. We are planning to use a single seed phrase for address generation on different supported blockchains.
+Users can create or restore accounts using a seed phrase. A [seed phrase](https://en.wikipedia.org/wiki/Cryptocurrency_wallet#Seed_phrases) is a set of random words used to generate private and public keys for a specific blockchain. We are planning to use a single seed phrase for address generation on different supported blockchains.
 
 ### KYC
 
-Some Finex nodes can request users to pass KYC verification. Verification will be done by the KYC partners in the Custody.org network. After successful verification, a user will receive an NFT token that verifies their identity on the Custody.org blockchain. Custody.org blockchain will be built as a Polkadot parachain that will help to provide cross-platform compatibility for KYC certificates that will be issued in the form of an NFT token. KYC certificate doesn't store any sensitive data. If Finex nodes need to get details about specific certificate they can request information from Custody.org
+Some Finex nodes can request users to pass KYC verification. Verification will be done by the KYC partners in the Custody.org network. After successful verification, a user will receive an NFT token that verifies their identity on the Custody.org blockchain. Custody.org blockchain will be built as a Polkadot parachain that will help to provide cross-platform compatibility for KYC certificates that will be issued in the form of an NFT token. KYC certificate doesn't store any sensitive data. If Finex nodes need to get details about specific certificate they can request information from Custody.org.
 
 ## On-Chain
 
