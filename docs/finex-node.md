@@ -6,9 +6,9 @@ sidebar_position: 7
 
 Finex node is an OpenDAX Liquidity Hub. Software that can be used by brokers to join the decentralized OpenDAX eXchange liquidity network (XLN). Finex node software has a bunch of modules: 
 
-- OpenFinex - matching engine for state channels
-- Router - helps to discover other Finex nodes and market pairs
-- Blockchains - a module responsible for connection and communication with blockchains. Mainly used for closing state channels
+- OpenFinex — matching engine for state channels
+- Router — helps to discover other Finex nodes and market pairs
+- Blockchains — a module responsible for connection and communication with blockchains. Mainly used for closing state channels
 
 ## Setup process
 
