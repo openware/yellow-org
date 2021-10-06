@@ -5,12 +5,12 @@ const blocks = [
     {
         src: '/img/icons/liquidity.svg',
         title: 'Liquidity',
-        text: 'Our technology is unlocking the liquidity of different blockchains and exchanges to the network of Finex nodes',
+        text: 'Our technology is unlocking the liquidity of different blockchains and exchanges to the network of Finex nodes.',
     },
     {
         src: '/img/icons/security.svg',
         title: 'Security',
-        text: 'We use state channel protocols that give off-chain performance while relying on the security of blockchain technology',
+        text: 'We use state channel protocols that give off-chain performance while relying on the security of blockchain technology.',
     },
     {
         src: '/img/icons/speed.svg',
