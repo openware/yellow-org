@@ -20,7 +20,7 @@ sidebar_position: 1
 
 ### Non-Custodial
 
-Transferring your assets to the Exchange is replaced with a Metamask connection. Your funds are secured using a multi-signature smart contract on the blockchain. You can fully audit the assets held by the exchange. 
+Transferring your assets to the Exchange is replaced with a MetaMask connection. Your funds are secured using a multi-signature smart contract on the blockchain. You can fully audit the assets held by the exchange. 
 
 ### Access to Market Pairs
 
