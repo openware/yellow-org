@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # What is Custody.org?
 
-[Custody.org](Custody.org) is a redesigned cryptoassets custody inventory and KYC providers network.
+[Custody.org](https://custody.org) is a redesigned cryptoassets custody inventory and KYC providers network.
 
 ## What do we do
 
@@ -17,7 +17,7 @@ Yes! Connecting via a verified crypto gateway like [MetaMask](https://metamask.i
 ## More details
 
 We are using cross-chain bridges for Wrapped tokens, and since pay-channel smart contracts are operating with trade-channel smart contracts on the 2nd layer — this way the user has access to numerous of actual 'market pairs' state channels. 
->View the [list](Custody.org) of supported crypto bridges (WBTC-BTC, WDOT-DOT, etc.)
+>View the [list](https://custody.org) of supported crypto bridges (WBTC-BTC, WDOT-DOT, etc.)
 <!--- FIXME: a relevant link is expected. --->
 Conversion of the asset to the Wrapped version and vise versa is automatized while the liquidity of the assets is provided by our partners.
 
