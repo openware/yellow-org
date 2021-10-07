@@ -31,7 +31,7 @@ export default function XLN() {
             <div className="container xln">
                 <div className="row">
                     <div className="col col--6">
-                    <LazyLoad once>
+                    <LazyLoad once offset={200}>
                         <picture>
                             <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/xln.png')} />
                             <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/xln_mobile.png')} />

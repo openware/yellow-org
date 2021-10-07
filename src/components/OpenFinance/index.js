@@ -17,7 +17,7 @@ export default function OpenFinance() {
                         Finance standards in financial products makes the system
                         more inclusive and diversified.
                     </p>
-                    <LazyLoad once>
+                    <LazyLoad once offset={200}>
                         <div className="section__center-img">
                             <img src={useBaseUrl('/img/opendax.svg')} />
                             <img src={useBaseUrl('/img/xln.svg')} />

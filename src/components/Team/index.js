@@ -56,7 +56,7 @@ export default function Team() {
                     <div className="team__grid-xl">
                         {TEAM_HEADLINERS.map(i => (
                             <div key={i.name} className="grid__item">
-                                <LazyLoad once>
+                                <LazyLoad once offset={200}>
                                     <img className="mb-24 team__headliner-img" src={buildImagePath(i.photo)} />
                                 </LazyLoad>
                                 <div className="space-between">
@@ -71,7 +71,7 @@ export default function Team() {
 
                     <div className="team__grid-xs">
                         {visibleMembers.map((i, id) => (
-                            <LazyLoad once key={i.name}>
+                            <LazyLoad once key={i.name} offset={200}>
                                 <Link
                                     onMouseEnter={() => setHoverId(id)}
                                     onMouseLeave={() => setHoverId(-1)}

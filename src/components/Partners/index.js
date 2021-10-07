@@ -9,7 +9,7 @@ export default function Partners() {
                 <h4>Partners</h4>
 
                 <div className="row section__center">
-                    <LazyLoad once>
+                    <LazyLoad once offset={200}>
                         <div className="section__center-img">
                             <img src={useBaseUrl("/img/openware.svg")} />
                             <img src={useBaseUrl("/img/kycaid.png")} />

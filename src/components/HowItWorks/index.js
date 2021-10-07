@@ -37,7 +37,7 @@ export default function HowItWorks() {
                     </div>
 
                     <div className="col col--6">
-                    <LazyLoad once>
+                    <LazyLoad once offset={200}>
                         <picture>
                             <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/how_it_works.png')} />
                             <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/how_it_works_mobile.png')} />

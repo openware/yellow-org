@@ -24,7 +24,7 @@ export default function Roadmap() {
                     </div>
 
                     <div className="col col--6">
-                        <LazyLoad once>
+                        <LazyLoad once offset={200}>
                             <picture>
                                 <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/roadmap.png')} />
                                 <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/roadmap_mobile.svg')} />

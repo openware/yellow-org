@@ -47,7 +47,7 @@ export default function FeaturesOfYellow() {
                         {blocks.map(i => {
                             return (
                                 <div key={i.src} className="icon-block">
-                                    <LazyLoad height={160} once><img className="icon-block__img" src={useBaseUrl(i.src)} /></LazyLoad>
+                                    <LazyLoad height={160} offset={200} once><img className="icon-block__img" src={useBaseUrl(i.src)} /></LazyLoad>
                                     <div className="h8 icon-block__title">{i.title}</div>
                                     <p className="body-2-16-400 icon-block__text">{i.text}</p>
                                     {/* <Link className="body-1-16-700 icon-block__link" to={i.link}>{i.linkText} <i className="arrow-right" /></Link> */}

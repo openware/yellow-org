@@ -45,7 +45,7 @@ export default function Tokenomics() {
                     </div>
 
                     <div className="col col--6">
-                        <LazyLoad once>
+                        <LazyLoad once offset={200}>
                             <picture>
                                 <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
                                 <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart_mobile.png')} />
