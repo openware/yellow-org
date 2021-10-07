@@ -1,5 +1,6 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import LazyLoad from 'react-lazyload';
 
 export default function Roadmap() {
     return (
@@ -23,11 +24,13 @@ export default function Roadmap() {
                     </div>
 
                     <div className="col col--6">
-                        <picture>
-                            <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/roadmap.png')} />
-                            <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/roadmap_mobile.svg')} />
-                            <img className="section__main-img" src={useBaseUrl('/img/components/roadmap.png')} />
-                        </picture>
+                        <LazyLoad once>
+                            <picture>
+                                <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/roadmap.png')} />
+                                <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/roadmap_mobile.svg')} />
+                                <img className="section__main-img" src={useBaseUrl('/img/components/roadmap.png')} />
+                            </picture>
+                        </LazyLoad>
                     </div>
                 </div>
             </div>

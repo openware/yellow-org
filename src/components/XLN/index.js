@@ -1,5 +1,6 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import LazyLoad from 'react-lazyload';
 
 const blocks = [
     {
@@ -30,11 +31,13 @@ export default function XLN() {
             <div className="container xln">
                 <div className="row">
                     <div className="col col--6">
+                    <LazyLoad once>
                         <picture>
                             <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/xln.png')} />
                             <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/xln_mobile.png')} />
                             <img className="section__main-img" src={useBaseUrl('/img/components/xln.png')} />
                         </picture>
+                    </LazyLoad>
                     </div>
                     <div className="col col--6">
                         <span className="highlight">Features</span>

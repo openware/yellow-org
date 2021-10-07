@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import LazyLoad from 'react-lazyload';
+
 import { MEMBERS, TEAM_HEADLINERS } from './members';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
@@ -54,7 +56,9 @@ export default function Team() {
                     <div className="team__grid-xl">
                         {TEAM_HEADLINERS.map(i => (
                             <div key={i.name} className="grid__item">
-                                <img className="mb-24 team__headliner-img" src={buildImagePath(i.photo)} />
+                                <LazyLoad once>
+                                    <img className="mb-24 team__headliner-img" src={buildImagePath(i.photo)} />
+                                </LazyLoad>
                                 <div className="space-between">
                                     <span className="h8">{i.name}</span>
                                     {i.socials.length && buildSocialIconsGroup(i.socials)}
@@ -67,20 +71,21 @@ export default function Team() {
 
                     <div className="team__grid-xs">
                         {visibleMembers.map((i, id) => (
-                            <Link
-                                key={i.name}
-                                onMouseEnter={() => setHoverId(id)}
-                                onMouseLeave={() => setHoverId(-1)}
-                                style={buildStyle(id, i.image)}
-                                to={i.link}
-                                className="grid__item"
-                            >
-                                {i.link ? <img className="mb-24 grid__item-icon" src={useBaseUrl('/img/icons/linkedin.svg')} /> : null}
-                                <div className="grid__item-text">
-                                    <p className="body-1-16-700">{i.name}</p>
-                                    <p className="captions-12-600">{i.position}</p>
-                                </div>
-                            </Link>
+                            <LazyLoad once key={i.name}>
+                                <Link
+                                    onMouseEnter={() => setHoverId(id)}
+                                    onMouseLeave={() => setHoverId(-1)}
+                                    style={buildStyle(id, i.image)}
+                                    to={i.link}
+                                    className="grid__item"
+                                >
+                                    {i.link ? <img className="mb-24 grid__item-icon" src={useBaseUrl('/img/icons/linkedin.svg')} /> : null}
+                                    <div className="grid__item-text">
+                                        <p className="body-1-16-700">{i.name}</p>
+                                        <p className="captions-12-600">{i.position}</p>
+                                    </div>
+                                </Link>
+                            </LazyLoad>
                         ))}
                     </div>
 

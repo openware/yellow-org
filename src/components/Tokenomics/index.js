@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import LazyLoad from 'react-lazyload';
 
 export default function Tokenomics() {
     return (
@@ -44,11 +45,13 @@ export default function Tokenomics() {
                     </div>
 
                     <div className="col col--6">
-                        <picture>
-                            <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
-                            <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart_mobile.png')} />
-                            <img className="section__main-img" src={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
-                        </picture>
+                        <LazyLoad once>
+                            <picture>
+                                <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
+                                <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart_mobile.png')} />
+                                <img className="section__main-img" src={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
+                            </picture>
+                        </LazyLoad>
                     </div>
                 </div>
             </div>

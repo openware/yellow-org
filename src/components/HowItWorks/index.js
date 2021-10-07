@@ -1,6 +1,7 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
+import LazyLoad from 'react-lazyload';
 
 export default function HowItWorks() {
     return (
@@ -36,11 +37,13 @@ export default function HowItWorks() {
                     </div>
 
                     <div className="col col--6">
+                    <LazyLoad once>
                         <picture>
                             <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/how_it_works.png')} />
                             <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/how_it_works_mobile.png')} />
                             <img className="section__main-img" src={useBaseUrl('/img/components/how_it_works.png')} />
                         </picture>
+                    </LazyLoad>
                     </div>
                 </div>
             </div>

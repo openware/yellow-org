@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import LazyLoad from 'react-lazyload';
 
 export default function OpenFinance() {
     return (
@@ -16,12 +17,14 @@ export default function OpenFinance() {
                         Finance standards in financial products makes the system
                         more inclusive and diversified.
                     </p>
-                    <div className="section__center-img">
-                        <img src={useBaseUrl('/img/opendax.svg')} />
-                        <img src={useBaseUrl('/img/xln.svg')} />
-                        <img src={useBaseUrl('/img/openfinance.svg')} />
-                        <img src={useBaseUrl('/img/custody.svg')} />
-                    </div>
+                    <LazyLoad once>
+                        <div className="section__center-img">
+                            <img src={useBaseUrl('/img/opendax.svg')} />
+                            <img src={useBaseUrl('/img/xln.svg')} />
+                            <img src={useBaseUrl('/img/openfinance.svg')} />
+                            <img src={useBaseUrl('/img/custody.svg')} />
+                        </div>
+                    </LazyLoad>
                     <Link
                         className="button button--secondary"
                         to="https://t.me/yellow_org">
