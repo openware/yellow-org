@@ -50,7 +50,8 @@
     }
 
     @media screen and (max-width: 374px) {
-      grid-template-columns: repeat(3, 80px);
+      grid-template-columns: repeat(3, 75px);
+      grid-gap: 10px;
     }
 
     .grid__item {
@@ -70,7 +71,7 @@
       }
 
       @media screen and (max-width: 374px) {
-        height: 80px;
+        height: 75px;
       }
 
       &-icon,
