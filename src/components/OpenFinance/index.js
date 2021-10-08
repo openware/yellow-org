@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function OpenFinance() {
     return (
@@ -17,10 +18,10 @@ export default function OpenFinance() {
                         more inclusive and diversified.
                     </p>
                     <div className="section__center-img">
-                        <img src={useBaseUrl('/img/opendax.svg')} />
-                        <img src={useBaseUrl('/img/xln.svg')} />
-                        <img src={useBaseUrl('/img/openfinance.svg')} />
-                        <img src={useBaseUrl('/img/custody.svg')} />
+                        <LazyLoadImage src={useBaseUrl('/img/opendax.svg')} effect="blur" threshold={200} />
+                        <LazyLoadImage src={useBaseUrl('/img/xln.svg')} effect="blur" threshold={200} />
+                        <LazyLoadImage src={useBaseUrl('/img/openfinance.svg')} effect="blur" threshold={200} />
+                        <LazyLoadImage src={useBaseUrl('/img/custody.svg')} effect="blur" threshold={200} />
                     </div>
                     <Link
                         className="button button--secondary"
