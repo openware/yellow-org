@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Partners() {
     return (
@@ -10,10 +10,10 @@ export default function Partners() {
 
                 <div className="row section__center">
                     <div className="section__center-img">
-                        <img src={useBaseUrl("/img/openware.svg")} />
-                        <img src={useBaseUrl("/img/kycaid.png")} />
-                        <img src={useBaseUrl("/img/fireblocks.svg")} />
-                        <img src={useBaseUrl("/img/custody_with_border.svg")} />
+                        <LazyLoadImage src={useBaseUrl("/img/openware.svg")} effect="blur" threshold={200} />
+                        <LazyLoadImage src={useBaseUrl("/img/kycaid.png")} effect="blur" threshold={200} />
+                        <LazyLoadImage src={useBaseUrl("/img/fireblocks.svg")} effect="blur" threshold={200} />
+                        <LazyLoadImage src={useBaseUrl("/img/custody_with_border.svg")} effect="blur" threshold={200} />
                     </div>
                 </div>
             </div>
