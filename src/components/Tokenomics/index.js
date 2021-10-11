@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Tokenomics() {
     return (
@@ -45,13 +45,14 @@ export default function Tokenomics() {
                     </div>
 
                     <div className="col col--6">
-                        <LazyLoadComponent threshold={200}>
-                            <picture>
-                                <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
-                                <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/tokenomics_pie_chart_mobile.png')} />
-                                <img className="section__main-img" src={useBaseUrl('/img/components/tokenomics_pie_chart.png')} />
-                            </picture>
-                        </LazyLoadComponent>
+                        <LazyLoadImage className="section__main-img"
+                            srcSet={`${useBaseUrl('/img/components/tokenomics_pie_chart_mobile.png')} 339w,
+                                    ${useBaseUrl('/img/components/tokenomics_pie_chart.png')} 623w,
+                                    ${useBaseUrl('/img/components/tokenomics_pie_chart_2x.png')} 1244w`}
+                            sizes="(max-width: 425px) 339px, (max-width: 2000px) 623px, 1244px"
+                            effect="blur"
+                            threshold={200}
+                        />
                     </div>
                 </div>
             </div>

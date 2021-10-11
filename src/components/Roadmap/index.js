@@ -1,6 +1,6 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Roadmap() {
     return (
@@ -24,13 +24,14 @@ export default function Roadmap() {
                     </div>
 
                     <div className="col col--6">
-                        <LazyLoadComponent threshold={200}>
-                            <picture>
-                                <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/roadmap.png')} />
-                                <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/roadmap_mobile.svg')} />
-                                <img className="section__main-img" src={useBaseUrl('/img/components/roadmap.png')} />
-                            </picture>
-                        </LazyLoadComponent>
+                        <LazyLoadImage className="section__main-img"
+                            srcSet={`${useBaseUrl('/img/components/roadmap_mobile.svg')} 339w,
+                                    ${useBaseUrl('/img/components/roadmap.png')} 682w,
+                                    ${useBaseUrl('/img/components/roadmap_2x.png')} 1362w`}
+                            sizes="(max-width: 425px) 339px, (max-width: 2000px) 682px, 1364px"
+                            effect="blur"
+                            threshold={200}
+                        />
                     </div>
                 </div>
             </div>

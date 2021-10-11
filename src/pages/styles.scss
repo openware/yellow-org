@@ -47,6 +47,10 @@
     }
   }
 
+  &__main-img {
+    width: initial !important;
+  }
+
   .highlight {
     background-color: var(--primary-cta-color-80);
     color: var(--secondary-control-layer-color-60);
@@ -88,8 +92,13 @@
 
 @media screen and (min-width: 1440px) {
   .section__main-img {
-    width: initial !important;
     max-width: initial;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .section__main-img {
+    max-width: 100%;
   }
 }
 
@@ -108,7 +117,6 @@
 
 @media screen and (min-width: 426px) and (max-width: 996px) {
   .section__main-img {
-    width: initial !important;
     max-width: 100%;
   }
 }
