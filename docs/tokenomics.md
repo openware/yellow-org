@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-title: Tokenomics
+title: Yellow Tokenomics
 ---
 
 ## Token overview
@@ -23,7 +23,7 @@ Yellow tokens will be distributed in the next way:
 Yellow.org exchange will use YEL as a platform-native token. Users that hold YEL tokens on the Yellow.org exchange will have different benefits:
 - Lower trading fees
 - Ability to stake YEL tokens
-- Ability to vote regarding new projects listing
+- Ability to vote on listing new projects on the Yellow exchange
 - Ability to participate in WASM slots in Yellow.org matching exchange
 
 ## Price stability
@@ -38,11 +38,11 @@ Additionally, Yellow.org will purchase back and burn 20% of YEL supply using 10%
 - 10 million YEL tokens
 - September 2021
 
-#### Private sell: 
+#### Private sale: 
 - 90 million YEL tokens
 - December 2021
 
-#### Public sell:
+#### Public sale:
 - 150 million YEL tokens
 - March 2022
 
