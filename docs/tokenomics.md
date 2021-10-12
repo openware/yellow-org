@@ -47,7 +47,7 @@ Additionally, Yellow.org will purchase back and burn 20% of YEL supply using 10%
 - March 2022
 
 #### Token listing:
-- Yhe initial amount in circulation is 100 million tokens
+- The initial amount in circulation is 100 million tokens
 - Start of the trading April 2022
 
 The last unlock of YEL tokens that have owners will happen in January 2025. Only community and development funds would contain YEL tokens based on the adoption and community activities.
