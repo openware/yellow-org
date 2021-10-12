@@ -4,16 +4,11 @@ sidebar_position: 1
 
 # What is Yellow.org?
 
-- A multi-asset spot trading exchange using OpenDAX, built using Open-Finance Protocol.
-
-- A Layer-3 non-custodial exchange offers more transparency and security to end-users.
-
-- The Yellow platform gives its users access to High-Speed Trading due to the advantages of using the Finex engine on each market.
-
-- Our exchange will provide access to diverse assets. To do that, we plan to use wrapped tokens, managing them with state channel smart contracts.
-
-- Yellow is also offering compliance to most regulations using 3rd party KYC providers and Custodians without sharing sensitive data.
-
+- A multi-asset spot trading exchange using [OpenDAX](https://www.openware.com/product/opendax) software stack, and based on [Open-Finance Protocol](https://open-finance.org/).
+- A Layer-3 non-custodial exchange offering robust, transparent, and secure experience to the traders.
+- The Yellow platform provides its users access to inherent High-Speed Trading due to the advantages of having the Finex engine on each market.
+- Yellow exchange will provide you access to a very diverse set of assets. To do that, we are developing the wrapped tokens, managing them with state channel smart contracts.
+- Yellow is also offering inherent compliance with most worldwide regulations by using 3rd party KYC providers and Custodians without sharing sensitive data.
 - You can easily create various markets and trade on them on Yellow.
 
 ## Features of Yellow.org
