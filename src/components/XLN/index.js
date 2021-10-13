@@ -1,6 +1,6 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const blocks = [
     {
@@ -31,13 +31,14 @@ export default function XLN() {
             <div className="container xln">
                 <div className="row">
                     <div className="col col--6">
-                    <LazyLoadComponent threshold={200}>
-                        <picture>
-                            <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/xln.png')} />
-                            <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/xln_mobile.png')} />
-                            <img className="section__main-img" src={useBaseUrl('/img/components/xln.png')} />
-                        </picture>
-                    </LazyLoadComponent>
+                    <LazyLoadImage className="section__main-img"
+                        srcSet={`${useBaseUrl('/img/components/xln_mobile.png')} 339w,
+                                ${useBaseUrl('/img/components/xln.png')} 624w,
+                                ${useBaseUrl('/img/components/xln_2x.png')} 1248w`}
+                        sizes="(max-width: 425px) 339px, (max-width: 2000px) 624px, 1248px"
+                        effect="blur"
+                        threshold={200}
+                    />
                     </div>
                     <div className="col col--6">
                         <span className="highlight">Features</span>

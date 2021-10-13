@@ -1,7 +1,7 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Link from '@docusaurus/Link';
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function HowItWorks() {
     return (
@@ -37,13 +37,14 @@ export default function HowItWorks() {
                     </div>
 
                     <div className="col col--6">
-                        <LazyLoadComponent threshold={200}>
-                            <picture>
-                                <source media="(min-width: 426px)" srcSet={useBaseUrl('/img/components/how_it_works.png')} />
-                                <source media="(max-width: 425px)" srcSet={useBaseUrl('/img/components/how_it_works_mobile.png')} />
-                                <img className="section__main-img" src={useBaseUrl('/img/components/how_it_works.png')} />
-                            </picture>
-                        </LazyLoadComponent>
+                        <LazyLoadImage className="section__main-img"
+                            srcSet={`${useBaseUrl('/img/components/how_it_works_mobile.png')} 339w,
+                                    ${useBaseUrl('/img/components/how_it_works.png')} 624w,
+                                    ${useBaseUrl('/img/components/how_it_works_2x.png')} 1248w`}
+                            sizes="(max-width: 425px) 339px, (max-width: 2000px) 624px, 1248px"
+                            effect="blur"
+                            threshold={200}
+                        />
                     </div>
                 </div>
             </div>

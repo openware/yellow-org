@@ -144,7 +144,7 @@ export const TEAM_HEADLINERS = [
         position: "Executive Chairman",
         description:
             "Alexis is a strategist, innovator, engineer, and brilliant mentor with extensive result-driven project handling experience - from launching rockets to kickstarting flourishing business venues.",
-        photo: "Alexis.jpg",
+        photo: "Alexis.png",
         socials: [
             { img: <LinkedinIcon />, link: "https://www.linkedin.com/in/sirkia/" },
         ],
@@ -172,7 +172,7 @@ export const TEAM_HEADLINERS = [
         position: "COO",
         description:
             "Sergii is a technology adept and inspiring leader, delivering excellence in business workflows by highlighting and empowering talent to create a strong team culture.",
-        photo: "Sergii.jpg",
+        photo: "Sergii.png",
         socials: [{ img: <LinkedinIcon />, link: "https://www.linkedin.com/in/kashchenko/" }],
     },
 ];
