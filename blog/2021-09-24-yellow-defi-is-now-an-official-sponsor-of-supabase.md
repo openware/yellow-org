@@ -1,5 +1,5 @@
 ---
-slug: Yellow DeFi is now an official sponsor of Supabase
+slug: yellow-defi-is-now-an-official-sponsor-of-supabase
 title: Yellow DeFi is now an official sponsor of Supabase
 author: Openware
 author_title: Crypto Exchange Foundry
